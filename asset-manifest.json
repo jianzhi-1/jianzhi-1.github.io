@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/jianzhi-1.github.io/static/css/main.1635e87c.chunk.css",
-    "main.js": "/jianzhi-1.github.io/static/js/main.1cf034ee.chunk.js",
-    "main.js.map": "/jianzhi-1.github.io/static/js/main.1cf034ee.chunk.js.map",
-    "runtime-main.js": "/jianzhi-1.github.io/static/js/runtime-main.d91bf227.js",
-    "runtime-main.js.map": "/jianzhi-1.github.io/static/js/runtime-main.d91bf227.js.map",
-    "static/js/2.38fa0529.chunk.js": "/jianzhi-1.github.io/static/js/2.38fa0529.chunk.js",
-    "static/js/2.38fa0529.chunk.js.map": "/jianzhi-1.github.io/static/js/2.38fa0529.chunk.js.map",
-    "static/js/3.40d9a5c9.chunk.js": "/jianzhi-1.github.io/static/js/3.40d9a5c9.chunk.js",
-    "static/js/3.40d9a5c9.chunk.js.map": "/jianzhi-1.github.io/static/js/3.40d9a5c9.chunk.js.map",
+    "main.css": "/jianzhi-1.github.io/static/css/main.fa5487a0.chunk.css",
+    "main.js": "/jianzhi-1.github.io/static/js/main.4e91c738.chunk.js",
+    "main.js.map": "/jianzhi-1.github.io/static/js/main.4e91c738.chunk.js.map",
+    "runtime-main.js": "/jianzhi-1.github.io/static/js/runtime-main.11de985e.js",
+    "runtime-main.js.map": "/jianzhi-1.github.io/static/js/runtime-main.11de985e.js.map",
+    "static/css/2.f1dffd84.chunk.css": "/jianzhi-1.github.io/static/css/2.f1dffd84.chunk.css",
+    "static/js/2.4a48f658.chunk.js": "/jianzhi-1.github.io/static/js/2.4a48f658.chunk.js",
+    "static/js/2.4a48f658.chunk.js.map": "/jianzhi-1.github.io/static/js/2.4a48f658.chunk.js.map",
+    "static/js/3.5592f7fd.chunk.js": "/jianzhi-1.github.io/static/js/3.5592f7fd.chunk.js",
+    "static/js/3.5592f7fd.chunk.js.map": "/jianzhi-1.github.io/static/js/3.5592f7fd.chunk.js.map",
     "index.html": "/jianzhi-1.github.io/index.html",
-    "static/css/main.1635e87c.chunk.css.map": "/jianzhi-1.github.io/static/css/main.1635e87c.chunk.css.map",
-    "static/js/2.38fa0529.chunk.js.LICENSE.txt": "/jianzhi-1.github.io/static/js/2.38fa0529.chunk.js.LICENSE.txt",
+    "static/css/2.f1dffd84.chunk.css.map": "/jianzhi-1.github.io/static/css/2.f1dffd84.chunk.css.map",
+    "static/css/main.fa5487a0.chunk.css.map": "/jianzhi-1.github.io/static/css/main.fa5487a0.chunk.css.map",
+    "static/js/2.4a48f658.chunk.js.LICENSE.txt": "/jianzhi-1.github.io/static/js/2.4a48f658.chunk.js.LICENSE.txt",
     "static/media/logo.2d27ead7.svg": "/jianzhi-1.github.io/static/media/logo.2d27ead7.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.d91bf227.js",
-    "static/js/2.38fa0529.chunk.js",
-    "static/css/main.1635e87c.chunk.css",
-    "static/js/main.1cf034ee.chunk.js"
+    "static/js/runtime-main.11de985e.js",
+    "static/css/2.f1dffd84.chunk.css",
+    "static/js/2.4a48f658.chunk.js",
+    "static/css/main.fa5487a0.chunk.css",
+    "static/js/main.4e91c738.chunk.js"
   ]
 }
