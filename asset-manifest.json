@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.1635e87c.chunk.css",
-    "main.js": "/static/js/main.691eb204.chunk.js",
-    "main.js.map": "/static/js/main.691eb204.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.3def0568.js",
-    "runtime-main.js.map": "/static/js/runtime-main.3def0568.js.map",
-    "static/js/2.db39837d.chunk.js": "/static/js/2.db39837d.chunk.js",
-    "static/js/2.db39837d.chunk.js.map": "/static/js/2.db39837d.chunk.js.map",
-    "static/js/3.eb2c8977.chunk.js": "/static/js/3.eb2c8977.chunk.js",
-    "static/js/3.eb2c8977.chunk.js.map": "/static/js/3.eb2c8977.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.1635e87c.chunk.css.map": "/static/css/main.1635e87c.chunk.css.map",
-    "static/js/2.db39837d.chunk.js.LICENSE.txt": "/static/js/2.db39837d.chunk.js.LICENSE.txt",
-    "static/media/logo.2d27ead7.svg": "/static/media/logo.2d27ead7.svg"
+    "main.css": "/jianzhi-1.github.io/static/css/main.1635e87c.chunk.css",
+    "main.js": "/jianzhi-1.github.io/static/js/main.691eb204.chunk.js",
+    "main.js.map": "/jianzhi-1.github.io/static/js/main.691eb204.chunk.js.map",
+    "runtime-main.js": "/jianzhi-1.github.io/static/js/runtime-main.c51d9d49.js",
+    "runtime-main.js.map": "/jianzhi-1.github.io/static/js/runtime-main.c51d9d49.js.map",
+    "static/js/2.db39837d.chunk.js": "/jianzhi-1.github.io/static/js/2.db39837d.chunk.js",
+    "static/js/2.db39837d.chunk.js.map": "/jianzhi-1.github.io/static/js/2.db39837d.chunk.js.map",
+    "static/js/3.eb2c8977.chunk.js": "/jianzhi-1.github.io/static/js/3.eb2c8977.chunk.js",
+    "static/js/3.eb2c8977.chunk.js.map": "/jianzhi-1.github.io/static/js/3.eb2c8977.chunk.js.map",
+    "index.html": "/jianzhi-1.github.io/index.html",
+    "static/css/main.1635e87c.chunk.css.map": "/jianzhi-1.github.io/static/css/main.1635e87c.chunk.css.map",
+    "static/js/2.db39837d.chunk.js.LICENSE.txt": "/jianzhi-1.github.io/static/js/2.db39837d.chunk.js.LICENSE.txt",
+    "static/media/logo.2d27ead7.svg": "/jianzhi-1.github.io/static/media/logo.2d27ead7.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.3def0568.js",
+    "static/js/runtime-main.c51d9d49.js",
     "static/js/2.db39837d.chunk.js",
     "static/css/main.1635e87c.chunk.css",
     "static/js/main.691eb204.chunk.js"
