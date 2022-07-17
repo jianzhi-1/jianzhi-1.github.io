@@ -50,7 +50,7 @@ export default function SideMenu({setPage}) {
             justifyContent: 'center',
             marginTop:'15px',
             marginBottom:'15px'}}>
-        <Avatar alt="Wang Jianzhi" src={avatar} sx={{ width: 128, height: 128 }}/>
+        <Avatar alt="Jianzhi Wang" src={avatar} sx={{ width: 96, height: 96 }}/>
         </div>
         <Divider />
         <List>

@@ -12,7 +12,7 @@ function createData(name, a, b, c, d, e, f, g) {
 }
 
 const rows = [
-    createData('5km', null, "21:49", "29:16", null, null, null, null),
+    createData('5km', null, "21:49", "29:16", "23:36", null, null, null),
     createData('10km', "48:14", "50:16", "55:01", null, null, null, null),
     createData('21.1km (Half-Marathon)', "2:09:35", null, null, null, null, null, null),
     createData('42.2km (Marathon)', "4:39:17", null, null, null, null, null, null),

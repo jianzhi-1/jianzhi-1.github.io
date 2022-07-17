@@ -3,7 +3,6 @@ import fun from './static/fun.jpeg';
 import './App.css';
 import React from 'react'
 import Button from '@mui/material/Button';
-import RunningTable from './RunningTable'
 import SideMenu from './SideMenu'
 import Project from './Project'
 import Sketch from './Sketch'
@@ -43,6 +42,10 @@ import gs from './static/g.jpg'
 import hs from './static/h.jpg'
 import is from './static/i.jpg'
 import js from './static/j.jpg'
+
+import RunningTable from './RunningTable'
+import SJPOTable from './SJPOTable'
+import CS70Table from './CS70Table'
 
 const allPages = ['About', 'Coursework', 'Experience', 'Projects', 'Teaching', 'Running', 'Sketches']
 
@@ -86,13 +89,13 @@ const App = () => {
 				<div style={{display: 'flex',
 				alignItems: 'center',
 				justifyContent: 'center',}}>
-					<Avatar alt="Wang Jianzhi" src={avatar} sx={{ width: 512, height: 512 }}/>
+					<Avatar alt="Jianzhi Wang" src={avatar} sx={{ width: 512, height: 512 }}/>
 				</div>
 
 				<div style={{display: 'flex',
 				alignItems: 'center',
 				justifyContent: 'center',}}>
-					<h1 style={{fontSize:"300%"}}>Wang Jianzhi</h1>
+					<h1 style={{fontSize:"300%"}}>Jianzhi Wang</h1>
 				</div>
 
 				<div style={{display: 'flex',
@@ -140,7 +143,7 @@ const App = () => {
 		  			<Grid container spacing={2}>
 		  				<Grid item xs={6}>
 							<div>
-								<p style={{fontSize:"120%"}}>I am Jianzhi, currently a freshman at University of California, Berkeley.</p>
+								<p style={{fontSize:"120%"}}>I am Jianzhi, currently a sophomore at University of California, Berkeley.</p>
 								<p style={{fontSize:"120%"}}>I love discussing about Mathematics and Computer Science (occasionally Physics as well). Feel free to approach me about these two subjects anytime!</p>
 								<p style={{fontSize:"120%"}}>Outside the realm of academics, I enjoy playing Ultimate Frisbee, hiking, running, watching Ace Attorney gameplays and challenging people in chess.</p>
 							</div>
@@ -171,6 +174,15 @@ const App = () => {
 			["MATH 191", "Experimental Courses in Mathematics (Putnam Seminar)"]
 		]
 
+		const spring22 = [
+			["COMPSCI 170", "Efficient Algorithms and Intractable Problems"],
+			["EECS 126", "Probability and Random Processes"],
+			["EECS 127", "Optimization Models in Engineering"],
+			["ENGLISH R1A", "Reading and Composition"],
+			["MATH 105", "Second Course in Analysis"],
+			["MATH 185", "Introduction to Complex Analysis"]
+		]
+
 		return (
 			<Box sx={{ display: 'flex' }}>
 
@@ -190,12 +202,13 @@ const App = () => {
 							</AccordionSummary>
 							<AccordionDetails>
 								{fall21.map((item) => (<Typography>
-								<b>{item[0]}</b>: {item[1]}
-							</Typography>))}
+									<b>{item[0]}</b>: {item[1]}
+								</Typography>))}
 							
 							</AccordionDetails>
 						</Accordion>
-						<Accordion>
+						<br></br>
+						<Accordion defaultExpanded>
 							<AccordionSummary
 							expandIcon={<ExpandMoreIcon />}
 							aria-controls="panel2a-content"
@@ -204,11 +217,12 @@ const App = () => {
 							<Typography>Spring 2022 🍃</Typography>
 							</AccordionSummary>
 							<AccordionDetails>
-							<Typography>
-								Coming soon!
-							</Typography>
+								{spring22.map((item) => (<Typography>
+									<b>{item[0]}</b>: {item[1]}
+								</Typography>))}
 							</AccordionDetails>
 						</Accordion>
+						<br></br>
 						<Accordion>
 							<AccordionSummary
 							expandIcon={<ExpandMoreIcon />}
@@ -216,6 +230,21 @@ const App = () => {
 							id="panel2a-header"
 							>
 							<Typography>Fall 2022 🍂</Typography>
+							</AccordionSummary>
+							<AccordionDetails>
+							<Typography>
+								Coming soon!
+							</Typography>
+							</AccordionDetails>
+						</Accordion>
+						<br></br>
+						<Accordion>
+							<AccordionSummary
+							expandIcon={<ExpandMoreIcon />}
+							aria-controls="panel2a-content"
+							id="panel2a-header"
+							>
+							<Typography>Spring 2023 🍃</Typography>
 							</AccordionSummary>
 							<AccordionDetails>
 							<Typography>
@@ -349,7 +378,42 @@ const App = () => {
 				<Box sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3 }}>
 					<div>
 						<p style={{fontSize:"300%"}}>Teaching</p>
-						<p style={{fontSize:"120%"}}> 🛠️ under construction 🛠️ </p>
+
+						<Accordion defaultExpanded>
+							<AccordionSummary
+							expandIcon={<ExpandMoreIcon />}
+							aria-controls="panel1a-content"
+							id="panel1a-header"
+							sx={{
+								backgroundColor: "#DED7F5"
+							}}
+							>
+								<Typography>CS 70</Typography>
+							</AccordionSummary>
+							<AccordionDetails>
+							<Typography>
+								<b>Fall 2022 🍂</b>
+								<CS70Table/>
+							</Typography>
+							</AccordionDetails>
+						</Accordion>
+						<br></br>
+
+						<Accordion>
+							<AccordionSummary
+							expandIcon={<ExpandMoreIcon />}
+							aria-controls="panel2a-content"
+							id="panel2a-header"
+							sx={{
+								backgroundColor: "#CBC3E3"
+							}}
+							>
+							<Typography>Singapore Junior Physics Olympiad</Typography>
+							</AccordionSummary>
+							<AccordionDetails>
+								<SJPOTable/>
+							</AccordionDetails>
+						</Accordion>
 					</div>
 				</Box>
 			</Box>

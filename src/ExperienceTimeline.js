@@ -29,11 +29,35 @@ export default function ExperienceTimeline() {
                             >
                             </TimelineOppositeContent>
                             <TimelineSeparator>
-                                <TimelineDot variant="outlined" color="primary" />
+                                <TimelineDot variant="outlined"/>
                                 <TimelineConnector />
                             </TimelineSeparator>
                             <TimelineContent>
                                 <Typography variant="h6" component="span">Future</Typography>
+                            </TimelineContent>
+                        </TimelineItem>
+
+                        <TimelineItem>
+                            <TimelineOppositeContent
+                            style={{flex:0.2}}
+                            align="right"
+                            variant="body2"
+                            color="black"
+                            >
+                                <Typography>
+                                May 2022
+                                </Typography>
+                                <Typography>
+                                Aug 2022
+                                </Typography>
+                            </TimelineOppositeContent>
+                            <TimelineSeparator>
+                                <TimelineDot variant="outlined" color="primary" />
+                                <TimelineConnector />
+                            </TimelineSeparator>
+                            <TimelineContent>
+                                <Typography variant="h6" component="span">Roblox</Typography>
+                                <Typography><i>Software Engineering Intern</i></Typography>
                             </TimelineContent>
                         </TimelineItem>
 
