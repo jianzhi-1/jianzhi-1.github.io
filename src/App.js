@@ -47,7 +47,7 @@ import RunningTable from './RunningTable'
 import SJPOTable from './SJPOTable'
 import CS70Table from './CS70Table'
 
-const allPages = ['About', 'Coursework', 'Experience', 'Projects', 'Teaching', 'Running', 'Sketches']
+const allPages = ['About', 'Coursework', 'Projects', 'Sketches']
 
 const useStyles = makeStyles({
 	list: {
@@ -81,7 +81,7 @@ const App = () => {
 	}
 
 	if (state.page == "home"){
-		const allPages = ["About", "Coursework", "Experience", "Projects", "Teaching", "Running", "Sketches"];
+		const allPages = ["About", "Coursework", "Projects", "Sketches"];
 		return (
 			<div>
 				<br></br>
@@ -89,21 +89,21 @@ const App = () => {
 				<div style={{display: 'flex',
 				alignItems: 'center',
 				justifyContent: 'center',}}>
-					<Avatar alt="Jianzhi Wang" src={avatar} sx={{ width: 512, height: 512 }}/>
+					<Avatar alt="Jianzhi Wang" src={avatar} sx={{ width: 384, height: 384 }}/>
 				</div>
 
 				<div style={{display: 'flex',
 				alignItems: 'center',
 				justifyContent: 'center',}}>
-					<h1 style={{fontSize:"300%"}}>Jianzhi Wang</h1>
+					<h1 style={{fontSize:"300%", fontFamily:"Helvetica"}}>Jianzhi Wang</h1>
 				</div>
 
 				<div style={{display: 'flex',
 				alignItems: 'center',
 				justifyContent: 'center', marginTop:"-70px"}}>
-					<h6 style={{fontSize:"120%"}}>Berkeley, CA</h6>
-					<h6 style={{fontSize:"120%"}}>&nbsp;·&nbsp;</h6>
-					<h6 style={{fontSize:"120%"}}>jianzhi@berkeley.edu</h6>
+					<h6 style={{fontSize:"120%", fontFamily:"Helvetica"}}>Berkeley, CA</h6>
+					<h6 style={{fontSize:"120%", fontFamily:"Helvetica"}}>&nbsp;·&nbsp;</h6>
+					<h6 style={{fontSize:"120%", fontFamily:"Helvetica"}}>jianzhi@</h6>
 				</div>
 
 				<div style={{display: 'flex',
@@ -183,6 +183,15 @@ const App = () => {
 			["MATH 185", "Introduction to Complex Analysis"]
 		]
 
+		const fall22 = [
+			["COMPSCI 61C", "Great Ideas of Computer Architecture (Machine Structures)"],
+			["COMPSCI 182", "Designing, Visualizing and Understanding Deep Neural Networks"],
+			["COMPSCI 189", "Introduction to Machine Learning"],
+			["MATH 113", "Introduction to Abstract Algebra"],
+			["STAT 150", "Stochastic Processes"],
+			["STAT 153", "Introduction to Time Series"]
+		]
+
 		return (
 			<Box sx={{ display: 'flex' }}>
 
@@ -223,7 +232,7 @@ const App = () => {
 							</AccordionDetails>
 						</Accordion>
 						<br></br>
-						<Accordion>
+						<Accordion defaultExpanded>
 							<AccordionSummary
 							expandIcon={<ExpandMoreIcon />}
 							aria-controls="panel2a-content"
@@ -232,9 +241,9 @@ const App = () => {
 							<Typography>Fall 2022 🍂</Typography>
 							</AccordionSummary>
 							<AccordionDetails>
-							<Typography>
-								Coming soon!
-							</Typography>
+								{fall22.map((item) => (<Typography>
+									<b>{item[0]}</b>: {item[1]}
+								</Typography>))}
 							</AccordionDetails>
 						</Accordion>
 						<br></br>
@@ -350,7 +359,7 @@ const App = () => {
 				<Box sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3 }}>
 				<div>
 					<p style={{fontSize:"300%"}}>Sketches</p>
-					<p style={{fontSize:"120%"}}>Below is a collection of a selected few of my own sketches.</p>
+					<p style={{fontSize:"120%"}}>Below is a collection of a selected few of my sketches.</p>
 
 
 					<Grid container spacing={2}>

@@ -54,7 +54,7 @@ export default function SideMenu({setPage}) {
         </div>
         <Divider />
         <List>
-          {['Home', 'About', 'Coursework', 'Experience', 'Projects', 'Teaching', 'Running', 'Sketches'].map((text, index) => (
+          {['Home', 'About', 'Coursework', 'Projects', 'Sketches'].map((text, index) => (
             <ListItem button key={text} onClick={() => {
                 setPage(text.toLowerCase());}}>
               <ListItemIcon>
