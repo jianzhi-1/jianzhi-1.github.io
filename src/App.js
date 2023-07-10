@@ -143,9 +143,9 @@ const App = () => {
 		  			<Grid container spacing={2}>
 		  				<Grid item xs={6}>
 							<div>
-								<p style={{fontSize:"120%"}}>I am Jianzhi, currently a sophomore at University of California, Berkeley.</p>
-								<p style={{fontSize:"120%"}}>I love discussing about Mathematics and Computer Science (occasionally Physics as well). Feel free to approach me about these two subjects anytime!</p>
-								<p style={{fontSize:"120%"}}>Outside the realm of academics, I enjoy playing Ultimate Frisbee, hiking, running, watching Ace Attorney gameplays and challenging people in chess.</p>
+								<p style={{fontSize:"120%"}}>I am Jianzhi, currently a junior at University of California, Berkeley.</p>
+								<p style={{fontSize:"120%"}}>I love discussing about Mathematics and Computer Science. Feel free to approach me about these two subjects anytime!</p>
+								<p style={{fontSize:"120%"}}>Outside the realm of academics, I enjoy playing Ultimate Frisbee, hiking, and running.</p>
 							</div>
 			  			</Grid>
 			  			<Grid item xs={6}>
@@ -172,7 +172,7 @@ const App = () => {
 			["MATH 104", "Introduction to Analysis"],
 			["MATH H110", "Honors Linear Algebra"],
 			["MATH 191", "Experimental Courses in Mathematics (Putnam Seminar)"]
-		]
+		];
 
 		const spring22 = [
 			["COMPSCI 170", "Efficient Algorithms and Intractable Problems"],
@@ -181,7 +181,7 @@ const App = () => {
 			["ENGLISH R1A", "Reading and Composition"],
 			["MATH 105", "Second Course in Analysis"],
 			["MATH 185", "Introduction to Complex Analysis"]
-		]
+		];
 
 		const fall22 = [
 			["COMPSCI 61C", "Great Ideas of Computer Architecture (Machine Structures)"],
@@ -190,7 +190,19 @@ const App = () => {
 			["MATH 113", "Introduction to Abstract Algebra"],
 			["STAT 150", "Stochastic Processes"],
 			["STAT 153", "Introduction to Time Series"]
-		]
+		];
+
+		const spring23 = [
+			["COMPSCI 162", "Operating Systems and System Programming"],
+			["EECS 151", "Introduction to Digital Design and Integrated Circuits"],
+			["EECS 151LB", "Field-Programmable Gate Array Laboratory"],
+			["ENGLISH R1B", "Reading and Composition"],
+			["MATH 114", "Second Course in Abstract Algebra"],
+			["MATH 126", "Introduction to Partial Differential Equations"]
+		];
+
+		const fall23 = [];
+		const spring24 = [];
 
 		return (
 			<Box sx={{ display: 'flex' }}>
@@ -254,6 +266,36 @@ const App = () => {
 							id="panel2a-header"
 							>
 							<Typography>Spring 2023 🍃</Typography>
+							</AccordionSummary>
+							<AccordionDetails>
+							{spring23.map((item) => (<Typography>
+									<b>{item[0]}</b>: {item[1]}
+								</Typography>))}
+							</AccordionDetails>
+						</Accordion>
+						<br></br>
+						<Accordion>
+							<AccordionSummary
+							expandIcon={<ExpandMoreIcon />}
+							aria-controls="panel2a-content"
+							id="panel2a-header"
+							>
+							<Typography>Fall 2023 🍂</Typography>
+							</AccordionSummary>
+							<AccordionDetails>
+							<Typography>
+								Coming soon!
+							</Typography>
+							</AccordionDetails>
+						</Accordion>
+						<br></br>
+						<Accordion>
+							<AccordionSummary
+							expandIcon={<ExpandMoreIcon />}
+							aria-controls="panel2a-content"
+							id="panel2a-header"
+							>
+							<Typography>Spring 2024 🍃</Typography>
 							</AccordionSummary>
 							<AccordionDetails>
 							<Typography>
