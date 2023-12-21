@@ -26,6 +26,8 @@ import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
 
 import pxl from './static/pixelisk.png';
+import twoRoneBLLM from './static/twoRoneBLLM.png'
+import spillyourtea from './static/spillyourtea.png'
 import starwhale from './static/whale200.gif'
 import darbouxparser from './static/darbouxparser.png'
 import bony from './static/bony.png'
@@ -201,8 +203,18 @@ const App = () => {
 			["MATH 126", "Introduction to Partial Differential Equations"]
 		];
 
-		const fall23 = [];
+		const fall23 = [
+			["MATH 128A", "Numerical Analysis"],
+			["MATH 202A", "Introduction to Topology and Analysis"],
+			["MATH C218A / STAT C205A", "Probability Theory"],
+			["MATH 222A", "Partial Differential Equations"],
+			["PSYCH C120", "Basic Issues in Cognition"]
+			["STAT 210A", "Theoretical Statistics"]
+		];
+
 		const spring24 = [];
+		const fall24 = [];
+		const spring25 = [];
 
 		return (
 			<Box sx={{ display: 'flex' }}>
@@ -283,6 +295,21 @@ const App = () => {
 							<Typography>Fall 2023 🍂</Typography>
 							</AccordionSummary>
 							<AccordionDetails>
+							{fall23.map((item) => (<Typography>
+									<b>{item[0]}</b>: {item[1]}
+								</Typography>))}
+							</AccordionDetails>
+						</Accordion>
+						<br></br>
+						<Accordion>
+							<AccordionSummary
+							expandIcon={<ExpandMoreIcon />}
+							aria-controls="panel2a-content"
+							id="panel2a-header"
+							>
+							<Typography>Spring 2024 🍃</Typography>
+							</AccordionSummary>
+							<AccordionDetails>
 							<Typography>
 								Coming soon!
 							</Typography>
@@ -295,7 +322,22 @@ const App = () => {
 							aria-controls="panel2a-content"
 							id="panel2a-header"
 							>
-							<Typography>Spring 2024 🍃</Typography>
+							<Typography>Fall 2024 🍂</Typography>
+							</AccordionSummary>
+							<AccordionDetails>
+							<Typography>
+								Coming soon!
+							</Typography>
+							</AccordionDetails>
+						</Accordion>
+						<br></br>
+						<Accordion>
+							<AccordionSummary
+							expandIcon={<ExpandMoreIcon />}
+							aria-controls="panel2a-content"
+							id="panel2a-header"
+							>
+							<Typography>Spring 2025 🍃</Typography>
 							</AccordionSummary>
 							<AccordionDetails>
 							<Typography>
@@ -319,6 +361,18 @@ const App = () => {
 						<br></br>
 
 						<Grid container spacing={2}>
+
+							<Project image={twoRoneBLLM} alt="2R1BLLM" title="Two Rooms and a Boom (LLM Version)"
+							description="A variant of the extremely fun board game 'Two Rooms and a Boom', where your opponents are LLMs designed to lie - submitted to HackMIT 2023" 
+							github="https://github.com/shinfxh/1-epsilon"
+							devpost="https://devpost.com/software/1-epsilon"
+							/>
+
+							<Project image={spillyourtea} alt="spill your tea" title="Spill Your Tea"
+							description="A simple BNF parser to test the complexity between two matching algorithms - submitted to Hack&ampRoll 2023" 
+							github="https://github.com/jianzhi-1/spill-your-tea"
+							devpost="https://devpost.com/software/patronus-g70sv9"
+							/>
 		
 							<Project image={darbouxparser} alt="darboux parser" title="Darboux Parser"
 							description="A simple BNF parser to test the complexity between two matching algorithms - created for CS61A A+ Project." 
