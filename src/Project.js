@@ -36,6 +36,7 @@ export default function Project({image, alt, title, description, github, devpost
                     <CardActions>
                         {github?<Button size="small"><a href={github} target="_blank" class="button">github</a></Button>:null}
                         {devpost?<Button size="small"><a href={devpost} target="_blank" class="button">devpost</a></Button>:null}
+                        {report?<Button size="small"><a href={report} target="_blank" class="button">report</a></Button>:null}
                         {demo?<Button size="small"><a href={demo} target="_blank" class="button">demo</a></Button>:null}
                         {tryitout?<Button size="small"><a href={tryitout} target="_blank" class="button">try it out!</a></Button>:null}
 					</CardActions>

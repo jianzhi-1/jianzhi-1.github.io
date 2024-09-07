@@ -33,6 +33,7 @@ import darbouxparser from './static/darbouxparser.png'
 import bony from './static/bony.png'
 import bandung from './static/bandung.png'
 import justice from './static/justice.png'
+import switchingautoregressive from './static/switchingautoregressive.png'
 
 import as from './static/a.jpeg'
 import bs from './static/b.jpg'
@@ -145,7 +146,7 @@ const App = () => {
 		  			<Grid container spacing={2}>
 		  				<Grid item xs={6}>
 							<div>
-								<p style={{fontSize:"120%"}}>I am Jianzhi, currently a junior at University of California, Berkeley.</p>
+								<p style={{fontSize:"120%"}}>I am Jianzhi, currently a senior at University of California, Berkeley.</p>
 								<p style={{fontSize:"120%"}}>I love discussing about Mathematics and Computer Science. Feel free to approach me about these two subjects anytime!</p>
 								<p style={{fontSize:"120%"}}>Outside the realm of academics, I enjoy playing Ultimate Frisbee, hiking, and running.</p>
 							</div>
@@ -212,7 +213,17 @@ const App = () => {
 			["STAT 210A", "Theoretical Statistics"]
 		];
 
-		const spring24 = [];
+		const spring24 = [
+			["COGSCI C127", "Cognitive Neuroscience"],
+			["COMLIT 60AC", "Topics in the Literature of American Cultures (New York City and Los Angeles)"],
+			["COMPSCI 186", "Introduction to Database Systems"],
+			["ENGIN 183B", "Berkeley Method of Entrepreneurship Bootcamp"],
+			["HISTORY 7B", "Introduction to the History of the United States: The United States from Civil War to Present"],
+			["STAT 210B", "Theoretical Statistics"],
+			["STAT 215B", "Statistical Models: Theory and Application"],
+			["STAT 230A", "Linear Models"]
+		];
+
 		const fall24 = [];
 		const spring25 = [];
 
@@ -310,9 +321,9 @@ const App = () => {
 							<Typography>Spring 2024 🍃</Typography>
 							</AccordionSummary>
 							<AccordionDetails>
-							<Typography>
-								Coming soon!
-							</Typography>
+							{spring24.map((item) => (<Typography>
+									<b>{item[0]}</b>: {item[1]}
+								</Typography>))}
 							</AccordionDetails>
 						</Accordion>
 						<br></br>
@@ -362,25 +373,31 @@ const App = () => {
 
 						<Grid container spacing={2}>
 
+							<Project image={switchingautoregressive} alt="switching autoregressive" title="Forecasting U.S.'s Unemployment Rate"
+							description="Using linear, autoregressive and switching AR models to predict U.S.'s unemployment rate; implying out the regime shifts in the economy - STAT 230A final project" 
+							github="https://github.com/jianzhi-1/US-Unemployment-Switching-Model"
+							report="https://github.com/jianzhi-1/US-Unemployment-Switching-Model/blob/main/230Areport.pdf"
+							/>
+
 							<Project image={twoRoneBLLM} alt="2R1BLLM" title="Two Rooms and a Boom (LLM Version)"
-							description="A variant of the extremely fun board game 'Two Rooms and a Boom', where your opponents are LLMs designed to lie - submitted to HackMIT 2023" 
+							description="A variant of the extremely fun board game 'Two Rooms and a Boom', where your opponents are LLMs designed to lie - submitted to HackMIT 2023 🎈" 
 							github="https://github.com/shinfxh/1-epsilon"
 							devpost="https://devpost.com/software/1-epsilon"
 							/>
 
 							<Project image={spillyourtea} alt="spill your tea" title="Spill Your Tea"
-							description="A simple BNF parser to test the complexity between two matching algorithms - submitted to Hack&ampRoll 2023" 
+							description="A simple BNF parser to test the complexity between two matching algorithms - Submitted to Hack&ampRoll 2023" 
 							github="https://github.com/jianzhi-1/spill-your-tea"
 							devpost="https://devpost.com/software/patronus-g70sv9"
 							/>
 		
 							<Project image={darbouxparser} alt="darboux parser" title="Darboux Parser"
-							description="A simple BNF parser to test the complexity between two matching algorithms - created for CS61A A+ Project." 
+							description="A simple BNF parser to test the complexity between two matching algorithms - Created for CS61A A+ Project" 
 							github="https://github.com/jianzhi-1/darboux-parser"
 							/>
 
 							<Project image={starwhale} alt="starwhale" title="Star Whales"
-							description="A gesture-tracking game (powered by planck.js and handtrack.js) made for CalHacks 8.0 2021" 
+							description="A gesture-tracking game (powered by planck.js and handtrack.js) - Made for CalHacks 8.0 2021 🧸" 
 							github="https://github.com/jianzhi-1/Star-Whales"
 							devpost="https://devpost.com/software/star-whales"
 							demo="https://www.youtube.com/watch?v=FPRGmSGK9Fk"
@@ -388,7 +405,7 @@ const App = () => {
 							/>
 
 							<Project image={justice} alt="justice" title="Justice"
-							description="A React-frontend, Django-backend web application for empowering conversations about social issues. Submitted to HackHarvard 2021" 
+							description="A React-frontend, Django-backend web application for empowering conversations about social issues - Submitted to HackHarvard 2021" 
 							devpost="https://devpost.com/software/justice-j19kgw"/>
 
 							<Project image={bandung} alt="bandung" title="Bandung"
