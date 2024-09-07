@@ -8,7 +8,7 @@ import CardActions from '@mui/material/CardActions';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
   
-export default function Project({image, alt, title, description, github, devpost, demo, tryitout}) {
+export default function Project({image, alt, title, description, github, devpost, report, demo, tryitout}) {
 
     return (
         <Grid item xs={3}>
