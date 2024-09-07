@@ -297,7 +297,7 @@ const App = () => {
 							</AccordionDetails>
 						</Accordion>
 						<br></br>
-						<Accordion>
+						<Accordion defaultExpanded>
 							<AccordionSummary
 							expandIcon={<ExpandMoreIcon />}
 							aria-controls="panel2a-content"
@@ -312,7 +312,7 @@ const App = () => {
 							</AccordionDetails>
 						</Accordion>
 						<br></br>
-						<Accordion>
+						<Accordion defaultExpanded>
 							<AccordionSummary
 							expandIcon={<ExpandMoreIcon />}
 							aria-controls="panel2a-content"
