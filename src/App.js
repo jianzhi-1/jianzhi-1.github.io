@@ -182,7 +182,7 @@ const App = () => {
 			["EECS 126", "Probability and Random Processes"],
 			["EECS 127", "Optimization Models in Engineering 💎"],
 			["ENGLISH R1A", "Reading and Composition"],
-			["MATH 105", "Second Course in Analysis"],
+			["MATH 105", "Second Course in Analysis 💎"],
 			["MATH 185", "Introduction to Complex Analysis"]
 		];
 
