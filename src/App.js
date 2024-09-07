@@ -180,7 +180,7 @@ const App = () => {
 		const spring22 = [
 			["COMPSCI 170", "Efficient Algorithms and Intractable Problems"],
 			["EECS 126", "Probability and Random Processes"],
-			["EECS 127", "Optimization Models in Engineering"],
+			["EECS 127", "Optimization Models in Engineering 💎"],
 			["ENGLISH R1A", "Reading and Composition"],
 			["MATH 105", "Second Course in Analysis"],
 			["MATH 185", "Introduction to Complex Analysis"]
@@ -196,8 +196,8 @@ const App = () => {
 		];
 
 		const spring23 = [
-			["COMPSCI 162", "Operating Systems and System Programming"],
-			["EECS 151", "Introduction to Digital Design and Integrated Circuits"],
+			["COMPSCI 162", "Operating Systems and System Programming 💎"],
+			["EECS 151", "Introduction to Digital Design and Integrated Circuits 💎"],
 			["EECS 151LB", "Field-Programmable Gate Array Laboratory"],
 			["ENGLISH R1B", "Reading and Composition"],
 			["MATH 114", "Second Course in Abstract Algebra"],
@@ -210,7 +210,7 @@ const App = () => {
 			["MATH C218A / STAT C205A", "Probability Theory"],
 			["MATH 222A", "Partial Differential Equations"],
 			["PSYCH C120", "Basic Issues in Cognition"],
-			["STAT 210A", "Theoretical Statistics"]
+			["STAT 210A", "Theoretical Statistics 💎"]
 		];
 
 		const spring24 = [
@@ -220,7 +220,7 @@ const App = () => {
 			["ENGIN 183B", "Berkeley Method of Entrepreneurship Bootcamp"],
 			["HISTORY 7B", "Introduction to the History of the United States: The United States from Civil War to Present"],
 			["STAT 210B", "Theoretical Statistics"],
-			["STAT 215B", "Statistical Models: Theory and Application"],
+			["STAT 215B", "Statistical Models: Theory and Application 💎"],
 			["STAT 230A", "Linear Models"]
 		];
 
