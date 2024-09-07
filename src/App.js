@@ -209,7 +209,7 @@ const App = () => {
 			["MATH 202A", "Introduction to Topology and Analysis"],
 			["MATH C218A / STAT C205A", "Probability Theory"],
 			["MATH 222A", "Partial Differential Equations"],
-			["PSYCH C120", "Basic Issues in Cognition"]
+			["PSYCH C120", "Basic Issues in Cognition"],
 			["STAT 210A", "Theoretical Statistics"]
 		];
 
@@ -386,7 +386,7 @@ const App = () => {
 							/>
 
 							<Project image={spillyourtea} alt="spill your tea" title="Spill Your Tea"
-							description="A simple BNF parser to test the complexity between two matching algorithms - Submitted to Hack&ampRoll 2023" 
+							description="A simple BNF parser to test the complexity between two matching algorithms - Submitted to Hack&amp;Roll 2023" 
 							github="https://github.com/jianzhi-1/spill-your-tea"
 							devpost="https://devpost.com/software/patronus-g70sv9"
 							/>
