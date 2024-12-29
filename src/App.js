@@ -35,6 +35,7 @@ import bandung from './static/bandung.png'
 import justice from './static/justice.png'
 import switchingautoregressive from './static/switchingautoregressive.png'
 import masqueimage from './static/masque.png'
+import worthyimage from './static/worthy.png'
 
 import as from './static/a.jpeg'
 import bs from './static/b.jpg'
@@ -391,6 +392,12 @@ const App = () => {
 							demo="https://github.com/jianzhi-1/masque/blob/main/presentation.pdf"
 							/>
 
+							<Project image={worthyimage} alt="worthy-image" title="Worthy"
+							description="A chatbot that showcases an incredibly smooth multiplexing of realtime conversational abilities, emotion display and graphic rendering - Made at Pear VC Hackathon (Fall) 2024 🍐" 
+							github="https://github.com/jianzhi-1/worthy"
+							demo="https://www.youtube.com/watch?v=XSTgHln8Upg"
+							/>
+
 							<Project image={switchingautoregressive} alt="switching autoregressive" title="Forecasting U.S.'s Unemployment Rate"
 							description="Using linear, autoregressive and switching AR models to predict U.S.'s unemployment rate; implying out the regime shifts in the economy - STAT 230A final project" 
 							github="https://github.com/jianzhi-1/US-Unemployment-Switching-Model"
@@ -398,7 +405,7 @@ const App = () => {
 							/>
 
 							<Project image={twoRoneBLLM} alt="2R1BLLM" title="Two Rooms and a Boom (LLM Version)"
-							description="A variant of the extremely fun board game 'Two Rooms and a Boom', where your opponents are LLMs designed to lie - submitted to HackMIT 2023 🎈" 
+							description="A variant of the extremely fun board game 'Two Rooms and a Boom', where your opponents are LLMs designed to lie - Submitted to HackMIT 2023 🎈" 
 							github="https://github.com/shinfxh/1-epsilon"
 							devpost="https://devpost.com/software/1-epsilon"
 							/>
