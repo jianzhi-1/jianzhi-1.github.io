@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.363c1f3e.chunk.css",
-    "main.js": "/static/js/main.ba6356f6.chunk.js",
-    "main.js.map": "/static/js/main.ba6356f6.chunk.js.map",
+    "main.js": "/static/js/main.12db43f2.chunk.js",
+    "main.js.map": "/static/js/main.12db43f2.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.0ed996b0.js",
     "runtime-main.js.map": "/static/js/runtime-main.0ed996b0.js.map",
     "static/js/2.a6838890.chunk.js": "/static/js/2.a6838890.chunk.js",
@@ -28,6 +28,7 @@
     "static/media/i.a174f027.jpg": "/static/media/i.a174f027.jpg",
     "static/media/j.b2e6a13a.jpg": "/static/media/j.b2e6a13a.jpg",
     "static/media/justice.2dfc4495.png": "/static/media/justice.2dfc4495.png",
+    "static/media/masque.2deadbda.png": "/static/media/masque.2deadbda.png",
     "static/media/pixelisk.adbb7b09.png": "/static/media/pixelisk.adbb7b09.png",
     "static/media/spillyourtea.8b84891c.png": "/static/media/spillyourtea.8b84891c.png",
     "static/media/switchingautoregressive.19300f41.png": "/static/media/switchingautoregressive.19300f41.png",
@@ -37,6 +38,6 @@
     "static/js/runtime-main.0ed996b0.js",
     "static/js/2.a6838890.chunk.js",
     "static/css/main.363c1f3e.chunk.css",
-    "static/js/main.ba6356f6.chunk.js"
+    "static/js/main.12db43f2.chunk.js"
   ]
 }
