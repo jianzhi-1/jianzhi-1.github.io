@@ -34,6 +34,7 @@ import bony from './static/bony.png'
 import bandung from './static/bandung.png'
 import justice from './static/justice.png'
 import switchingautoregressive from './static/switchingautoregressive.png'
+import masqueimage from './static/masque.png'
 
 import as from './static/a.jpeg'
 import bs from './static/b.jpg'
@@ -224,7 +225,17 @@ const App = () => {
 			["STAT 230A", "Linear Models"]
 		];
 
-		const fall24 = [];
+		const fall24 = [
+			["COMPSCI 164", "Programming Languages and Compilers"],
+			["COMPSCI 168", "Introduction to the Internet: Architecture and Protocols 💎"],
+			["COMPSCI 198", "Linux System Administration Decal"],
+			["COMPSCI 288", "Natural Language Processing"],
+			["ECON C171", "Development Economics"],
+			["ELENG 225D", "Audio Signal Processing in Humans and Machines"],
+			["ENGLISH 177", "Literature and Philosophy 💎"],
+			["INDENG 221", "Introduction to Financial Engineering"]
+		];
+
 		const spring25 = [];
 
 		return (
@@ -327,7 +338,7 @@ const App = () => {
 							</AccordionDetails>
 						</Accordion>
 						<br></br>
-						<Accordion>
+						<Accordion defaultExpanded>
 							<AccordionSummary
 							expandIcon={<ExpandMoreIcon />}
 							aria-controls="panel2a-content"
@@ -336,9 +347,9 @@ const App = () => {
 							<Typography>Fall 2024 🍂</Typography>
 							</AccordionSummary>
 							<AccordionDetails>
-							<Typography>
-								Coming soon!
-							</Typography>
+							{fall24.map((item) => (<Typography>
+									<b>{item[0]}</b>: {item[1]}
+								</Typography>))}
 							</AccordionDetails>
 						</Accordion>
 						<br></br>
@@ -372,6 +383,13 @@ const App = () => {
 						<br></br>
 
 						<Grid container spacing={2}>
+
+							<Project image={masqueimage} alt="masque-image" title="Monotonous-to-Expressive Audio Converter"
+							description="Masque is a transformer encoder model that uses auditory features as intermediaries to convert monotonous audio into expressive ones (from the set of 'happy', 'sad', 'confused', 'laughing') - ELENG 225D final project" 
+							github="https://github.com/jianzhi-1/masque-prod"
+							report="https://github.com/jianzhi-1/masque/blob/main/report.pdf"
+							demo="https://github.com/jianzhi-1/masque/blob/main/presentation.pdf"
+							/>
 
 							<Project image={switchingautoregressive} alt="switching autoregressive" title="Forecasting U.S.'s Unemployment Rate"
 							description="Using linear, autoregressive and switching AR models to predict U.S.'s unemployment rate; implying out the regime shifts in the economy - STAT 230A final project" 
