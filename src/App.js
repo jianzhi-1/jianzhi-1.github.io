@@ -36,6 +36,7 @@ import justice from './static/justice.png'
 import switchingautoregressive from './static/switchingautoregressive.png'
 import masqueimage from './static/masque.png'
 import worthyimage from './static/worthy.png'
+import branchpredictor from './static/branchpredictor.png'
 
 import as from './static/a.jpeg'
 import bs from './static/b.jpg'
@@ -408,6 +409,11 @@ const App = () => {
 							description="A variant of the extremely fun board game 'Two Rooms and a Boom', where your opponents are LLMs designed to lie - Submitted to HackMIT 2023 🎈" 
 							github="https://github.com/shinfxh/1-epsilon"
 							devpost="https://devpost.com/software/1-epsilon"
+							/>
+
+							<Project image={branchpredictor} alt="RISC-V Processor" title="RISC-V 5-Stage Pipeline Processor"
+							description="A 5-stage RISC-V processor that aims to maximise a predetermined metric - Implemented and tested during Spring 2023's EECS 151" 
+							report="https://github.com/jianzhi-1/eecs251b/blob/main/151/sp23_151_report.pdf"
 							/>
 
 							<Project image={spillyourtea} alt="spill your tea" title="Spill Your Tea"
