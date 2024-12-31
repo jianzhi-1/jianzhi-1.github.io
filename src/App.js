@@ -417,7 +417,7 @@ const App = () => {
 							/>
 
 							<Project image={spillyourtea} alt="spill your tea" title="Spill Your Tea"
-							description="A simple BNF parser to test the complexity between two matching algorithms - Submitted to Hack&amp;Roll 2023" 
+							description="A virtual avatar for every person which is conditioned on their text messages, so that you can chat with another person's patronus when they are away (or not responding to you) - Submitted to Hack&amp;Roll 2023" 
 							github="https://github.com/jianzhi-1/spill-your-tea"
 							devpost="https://devpost.com/software/patronus-g70sv9"
 							/>
