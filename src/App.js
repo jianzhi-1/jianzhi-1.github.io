@@ -40,7 +40,10 @@ import branchpredictor from './static/branchpredictor.png'
 
 import MATH126MT1 from './static/126MT1.pdf';
 import MATH126MT2 from './static/126MT2.pdf';
-import MATH126Final from './static/126Final.pdf';
+import MATH126FINAL from './static/126Final.pdf';
+import MATH222AMT1 from './static/222AMT1.pdf';
+import MATH222AMT2 from './static/222AMT2.pdf';
+import MATH222AFINAL from './static/222AFinal.pdf';
 
 import as from './static/a.jpeg'
 import bs from './static/b.jpg'
@@ -208,14 +211,14 @@ const App = () => {
 			["EECS 151LB", "Field-Programmable Gate Array Laboratory"],
 			["ENGLISH R1B", "Reading and Composition"],
 			["MATH 114", "Second Course in Abstract Algebra"],
-			["MATH 126", "Introduction to Partial Differential Equations", MATH126MT1, MATH126MT2, MATH126Final]
+			["MATH 126", "Introduction to Partial Differential Equations", MATH126MT1, MATH126MT2, MATH126FINAL]
 		];
 
 		const fall23 = [
 			["MATH 128A", "Numerical Analysis"],
 			["MATH 202A", "Introduction to Topology and Analysis"],
 			["MATH C218A / STAT C205A", "Probability Theory"],
-			["MATH 222A", "Partial Differential Equations"],
+			["MATH 222A", "Partial Differential Equations", MATH222AMT1, MATH222AMT2, MATH222AFINAL],
 			["PSYCH C120", "Basic Issues in Cognition"],
 			["STAT 210A", "Theoretical Statistics 💎"]
 		];
@@ -337,7 +340,20 @@ const App = () => {
 							</AccordionSummary>
 							<AccordionDetails>
 							{fall23.map((item) => (<Typography>
-									<b>{item[0]}</b>: {item[1]}
+									<b>{item[0]}</b>: {item[1]} {item.length > 2 ? (
+									<span>
+										[
+										{Array.from({ length: item.length - 2 }).map((_, index) => (
+										<span key={index}>
+											<a href={item[index + 2]} target="_blank">
+											notes
+											</a>
+											{index !== item.length - 3 ? ", " : ""}
+										</span>
+										))}
+										]
+									</span>
+									) : ""}
 								</Typography>))}
 							</AccordionDetails>
 						</Accordion>
