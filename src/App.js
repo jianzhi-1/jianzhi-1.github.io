@@ -309,20 +309,20 @@ const App = () => {
 							</AccordionSummary>
 							<AccordionDetails>
 							{spring23.map((item) => (<Typography>
-									<b>{item[0]}</b>: {item[1]} {item.length > 2 ? 
-									(<span>
-										[{
-											Array.from({ length: item.length - 2 }).map((_, index) => (
-												<div>
-													<a href={item[index + 2]} target="_blank">
-														notes
-													</a>
-													{index == item.length - 1 ? "," : ""}
-												</div>
-											))
-										}]
-									</span>)
-									: ""}
+									<b>{item[0]}</b>: {item[1]} {item.length > 2 ? (
+									<span>
+										[
+										{Array.from({ length: item.length - 2 }).map((_, index) => (
+										<span key={index}>
+											<a href={item[index + 2]} target="_blank">
+											notes
+											</a>
+											{index === item.length - 3 ? ',' : ' '}
+										</span>
+										))}
+										]
+									</span>
+									) : ""}
 								</Typography>))}
 							</AccordionDetails>
 						</Accordion>
