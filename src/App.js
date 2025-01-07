@@ -39,6 +39,8 @@ import worthyimage from './static/worthy.png'
 import branchpredictor from './static/branchpredictor.png'
 
 import MATH126MT1 from './static/126MT1.pdf';
+import MATH126MT2 from './static/126MT2.pdf';
+import MATH126Final from './static/126Final.pdf';
 
 import as from './static/a.jpeg'
 import bs from './static/b.jpg'
@@ -206,7 +208,7 @@ const App = () => {
 			["EECS 151LB", "Field-Programmable Gate Array Laboratory"],
 			["ENGLISH R1B", "Reading and Composition"],
 			["MATH 114", "Second Course in Abstract Algebra"],
-			["MATH 126", "Introduction to Partial Differential Equations", "MT1"]
+			["MATH 126", "Introduction to Partial Differential Equations", MATH126MT1, MATH126MT2, MATH126Final]
 		];
 
 		const fall23 = [
@@ -307,7 +309,20 @@ const App = () => {
 							</AccordionSummary>
 							<AccordionDetails>
 							{spring23.map((item) => (<Typography>
-									<b>{item[0]}</b>: {item[1]} {item.length > 2 ? <a href = {MATH126MT1} target = "_blank">[notes]</a> : ""}
+									<b>{item[0]}</b>: {item[1]} {item.length > 2 ? 
+									(<span>
+										[{
+											Array.from({ length: item.length - 2 }).map((_, index) => (
+												<div>
+													<a href={item[index + 2]} target="_blank">
+														notes
+													</a>
+													{index == item.length - 1 ? "," : ""}
+												</div>
+											))
+										}]
+									</span>)
+									: ""}
 								</Typography>))}
 							</AccordionDetails>
 						</Accordion>
