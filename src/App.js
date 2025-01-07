@@ -38,6 +38,8 @@ import masqueimage from './static/masque.png'
 import worthyimage from './static/worthy.png'
 import branchpredictor from './static/branchpredictor.png'
 
+import MATH126MT1 from './static/126MT1.pdf';
+
 import as from './static/a.jpeg'
 import bs from './static/b.jpg'
 import cs from './static/c.jpg'
@@ -204,7 +206,7 @@ const App = () => {
 			["EECS 151LB", "Field-Programmable Gate Array Laboratory"],
 			["ENGLISH R1B", "Reading and Composition"],
 			["MATH 114", "Second Course in Abstract Algebra"],
-			["MATH 126", "Introduction to Partial Differential Equations"]
+			["MATH 126", "Introduction to Partial Differential Equations", "MT1"]
 		];
 
 		const fall23 = [
@@ -305,7 +307,7 @@ const App = () => {
 							</AccordionSummary>
 							<AccordionDetails>
 							{spring23.map((item) => (<Typography>
-									<b>{item[0]}</b>: {item[1]}
+									<b>{item[0]}</b>: {item[1]} {item.length > 2 ? <a href = {MATH126MT1} target = "_blank">[notes]</a> : ""}
 								</Typography>))}
 							</AccordionDetails>
 						</Accordion>
