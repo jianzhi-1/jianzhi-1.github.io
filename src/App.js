@@ -317,7 +317,7 @@ const App = () => {
 											<a href={item[index + 2]} target="_blank">
 											notes
 											</a>
-											{index === item.length - 3 ? ',' : ' '}
+											{index !== item.length - 3 ? ", " : ""}
 										</span>
 										))}
 										]
