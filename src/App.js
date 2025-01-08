@@ -38,6 +38,14 @@ import masqueimage from './static/masque.png'
 import worthyimage from './static/worthy.png'
 import branchpredictor from './static/branchpredictor.png'
 
+import CS170MT1 from './static/170MT1.pdf';
+import CS170MT2 from './static/170MT2.pdf';
+import ECON171FINAL from './static/171Final.pdf';
+import EECS126MT1 from './static/126EEMT1.pdf';
+import EECS126FINAL from './static/126EEFinal.pdf';
+import EECS127MT from './static/127MT.pdf';
+import EECS127FINAL from './static/127Final.pdf';
+import MATH105FINAL from './static/105Final.pdf';
 import MATH126MT1 from './static/126MT1.pdf';
 import MATH126MT2 from './static/126MT2.pdf';
 import MATH126FINAL from './static/126Final.pdf';
@@ -191,11 +199,11 @@ const App = () => {
 		];
 
 		const spring22 = [
-			["COMPSCI 170", "Efficient Algorithms and Intractable Problems"],
-			["EECS 126", "Probability and Random Processes"],
-			["EECS 127", "Optimization Models in Engineering 💎"],
+			["COMPSCI 170", "Efficient Algorithms and Intractable Problems", CS170MT1, CS170MT2],
+			["EECS 126", "Probability and Random Processes", EECS126MT1, EECS126FINAL],
+			["EECS 127", "Optimization Models in Engineering 💎", EECS127MT, EECS127FINAL],
 			["ENGLISH R1A", "Reading and Composition"],
-			["MATH 105", "Second Course in Analysis 💎"],
+			["MATH 105", "Second Course in Analysis 💎", MATH105FINAL],
 			["MATH 185", "Introduction to Complex Analysis"]
 		];
 
@@ -242,7 +250,7 @@ const App = () => {
 			["COMPSCI 168", "Introduction to the Internet: Architecture and Protocols 💎"],
 			["COMPSCI 198", "Linux System Administration Decal"],
 			["COMPSCI 288", "Natural Language Processing"],
-			["ECON C171", "Development Economics"],
+			["ECON C171", "Development Economics", ECON171FINAL],
 			["ELENG 225D", "Audio Signal Processing in Humans and Machines"],
 			["ENGLISH 177", "Literature and Philosophy 💎"],
 			["INDENG 221", "Introduction to Financial Engineering"]
@@ -269,9 +277,21 @@ const App = () => {
 							</AccordionSummary>
 							<AccordionDetails>
 								{fall21.map((item) => (<Typography>
-									<b>{item[0]}</b>: {item[1]}
+									<b>{item[0]}</b>: {item[1]} {item.length > 2 ? (
+									<span>
+										[
+										{Array.from({ length: item.length - 2 }).map((_, index) => (
+										<span key={index}>
+											<a href={item[index + 2]} target="_blank">
+											notes
+											</a>
+											{index !== item.length - 3 ? ", " : ""}
+										</span>
+										))}
+										]
+									</span>
+									) : ""}
 								</Typography>))}
-							
 							</AccordionDetails>
 						</Accordion>
 						<br></br>
@@ -285,7 +305,20 @@ const App = () => {
 							</AccordionSummary>
 							<AccordionDetails>
 								{spring22.map((item) => (<Typography>
-									<b>{item[0]}</b>: {item[1]}
+									<b>{item[0]}</b>: {item[1]} {item.length > 2 ? (
+									<span>
+										[
+										{Array.from({ length: item.length - 2 }).map((_, index) => (
+										<span key={index}>
+											<a href={item[index + 2]} target="_blank">
+											notes
+											</a>
+											{index !== item.length - 3 ? ", " : ""}
+										</span>
+										))}
+										]
+									</span>
+									) : ""}
 								</Typography>))}
 							</AccordionDetails>
 						</Accordion>
@@ -300,7 +333,20 @@ const App = () => {
 							</AccordionSummary>
 							<AccordionDetails>
 								{fall22.map((item) => (<Typography>
-									<b>{item[0]}</b>: {item[1]}
+									<b>{item[0]}</b>: {item[1]} {item.length > 2 ? (
+									<span>
+										[
+										{Array.from({ length: item.length - 2 }).map((_, index) => (
+										<span key={index}>
+											<a href={item[index + 2]} target="_blank">
+											notes
+											</a>
+											{index !== item.length - 3 ? ", " : ""}
+										</span>
+										))}
+										]
+									</span>
+									) : ""}
 								</Typography>))}
 							</AccordionDetails>
 						</Accordion>
@@ -371,7 +417,20 @@ const App = () => {
 							</AccordionSummary>
 							<AccordionDetails>
 							{spring24.map((item) => (<Typography>
-									<b>{item[0]}</b>: {item[1]}
+									<b>{item[0]}</b>: {item[1]} {item.length > 2 ? (
+									<span>
+										[
+										{Array.from({ length: item.length - 2 }).map((_, index) => (
+										<span key={index}>
+											<a href={item[index + 2]} target="_blank">
+											notes
+											</a>
+											{index !== item.length - 3 ? ", " : ""}
+										</span>
+										))}
+										]
+									</span>
+									) : ""}
 								</Typography>))}
 							</AccordionDetails>
 						</Accordion>
@@ -386,7 +445,20 @@ const App = () => {
 							</AccordionSummary>
 							<AccordionDetails>
 							{fall24.map((item) => (<Typography>
-									<b>{item[0]}</b>: {item[1]}
+									<b>{item[0]}</b>: {item[1]} {item.length > 2 ? (
+									<span>
+										[
+										{Array.from({ length: item.length - 2 }).map((_, index) => (
+										<span key={index}>
+											<a href={item[index + 2]} target="_blank">
+											notes
+											</a>
+											{index !== item.length - 3 ? ", " : ""}
+										</span>
+										))}
+										]
+									</span>
+									) : ""}
 								</Typography>))}
 							</AccordionDetails>
 						</Accordion>
