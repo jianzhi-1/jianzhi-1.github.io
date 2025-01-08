@@ -46,6 +46,8 @@ import EECS126FINAL from './static/126EEFinal.pdf';
 import EECS127MT from './static/127MT.pdf';
 import EECS127FINAL from './static/127Final.pdf';
 import MATH105FINAL from './static/105Final.pdf';
+import MATHH110FINAL from './static/110Final.pdf';
+import MATH113FINAL from './static/113Final.pdf';
 import MATH126MT1 from './static/126MT1.pdf';
 import MATH126MT2 from './static/126MT2.pdf';
 import MATH126FINAL from './static/126Final.pdf';
@@ -55,6 +57,13 @@ import MATH218AFINAL from './static/218AFinal.pdf';
 import MATH222AMT1 from './static/222AMT1.pdf';
 import MATH222AMT2 from './static/222AMT2.pdf';
 import MATH222AFINAL from './static/222AFinal.pdf';
+import STAT150MT1 from './static/150MT1.pdf';
+import STAT150MT2 from './static/150MT2.pdf';
+import STAT150FINAL from './static/150Final.pdf';
+import STAT153MT from './static/153MT.pdf';
+import STAT153FINAL from './static/153Final.pdf';
+import STAT210BFINAL from './static/210BFinal.pdf';
+import STAT230AMT from './static/230AMT.pdf';
 
 import as from './static/a.jpeg'
 import bs from './static/b.jpg'
@@ -194,7 +203,7 @@ const App = () => {
 			["COMPSCI 61B", "Data Structures"],
 			["COMPSCI 70", "Discrete Mathematics and Probability Theory"],
 			["MATH 104", "Introduction to Analysis"],
-			["MATH H110", "Honors Linear Algebra"],
+			["MATH H110", "Honors Linear Algebra 💎", MATHH110FINAL],
 			["MATH 191", "Experimental Courses in Mathematics (Putnam Seminar)"]
 		];
 
@@ -211,9 +220,9 @@ const App = () => {
 			["COMPSCI 61C", "Great Ideas of Computer Architecture (Machine Structures)"],
 			["COMPSCI 182", "Designing, Visualizing and Understanding Deep Neural Networks"],
 			["COMPSCI 189", "Introduction to Machine Learning"],
-			["MATH 113", "Introduction to Abstract Algebra"],
-			["STAT 150", "Stochastic Processes"],
-			["STAT 153", "Introduction to Time Series"]
+			["MATH 113", "Introduction to Abstract Algebra", MATH113FINAL],
+			["STAT 150", "Stochastic Processes", STAT150MT1, STAT150MT2, STAT150FINAL],
+			["STAT 153", "Introduction to Time Series", STAT153MT, STAT153FINAL]
 		];
 
 		const spring23 = [
@@ -240,9 +249,9 @@ const App = () => {
 			["COMPSCI 186", "Introduction to Database Systems"],
 			["ENGIN 183B", "Berkeley Method of Entrepreneurship Bootcamp"],
 			["HISTORY 7B", "Introduction to the History of the United States: The United States from Civil War to Present"],
-			["STAT 210B", "Theoretical Statistics"],
+			["STAT 210B", "Theoretical Statistics", STAT210BFINAL],
 			["STAT 215B", "Statistical Models: Theory and Application 💎"],
-			["STAT 230A", "Linear Models"]
+			["STAT 230A", "Linear Models", STAT230AMT]
 		];
 
 		const fall24 = [
