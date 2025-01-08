@@ -43,6 +43,7 @@ import MATH126MT2 from './static/126MT2.pdf';
 import MATH126FINAL from './static/126Final.pdf';
 import MATH128AMT from './static/128AMT.pdf';
 import MATH128AFINAL from './static/128AFinal.pdf';
+import MATH218AFINAL from './static/218AFinal.pdf';
 import MATH222AMT1 from './static/222AMT1.pdf';
 import MATH222AMT2 from './static/222AMT2.pdf';
 import MATH222AFINAL from './static/222AFinal.pdf';
@@ -219,7 +220,7 @@ const App = () => {
 		const fall23 = [
 			["MATH 128A", "Numerical Analysis", MATH128AMT, MATH128AFINAL],
 			["MATH 202A", "Introduction to Topology and Analysis"],
-			["MATH C218A / STAT C205A", "Probability Theory"],
+			["MATH C218A / STAT C205A", "Probability Theory", MATH218AFINAL],
 			["MATH 222A", "Partial Differential Equations", MATH222AMT1, MATH222AMT2, MATH222AFINAL],
 			["PSYCH C120", "Basic Issues in Cognition"],
 			["STAT 210A", "Theoretical Statistics 💎"]
