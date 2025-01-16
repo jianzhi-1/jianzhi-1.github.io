@@ -37,6 +37,7 @@ import switchingautoregressive from './static/switchingautoregressive.png'
 import masqueimage from './static/masque.png'
 import worthyimage from './static/worthy.png'
 import branchpredictor from './static/branchpredictor.png'
+import garch from './static/garch.png'
 
 import CS170MT1 from './static/170MT1.pdf';
 import CS170MT2 from './static/170MT2.pdf';
@@ -64,6 +65,7 @@ import STAT153MT from './static/153MT.pdf';
 import STAT153FINAL from './static/153Final.pdf';
 import STAT210BFINAL from './static/210BFinal.pdf';
 import STAT230AMT from './static/230AMT.pdf';
+import STAT215BFINAL from './static/215BFinal.pdf';
 
 import as from './static/a.jpeg'
 import bs from './static/b.jpg'
@@ -504,7 +506,7 @@ const App = () => {
 						<Grid container spacing={2}>
 
 							<Project image={masqueimage} alt="masque-image" title="Monotonous-to-Expressive Audio Converter"
-							description="Masque is a transformer encoder model that uses auditory features as intermediaries to convert monotonous audio into expressive ones (from the set of 'happy', 'sad', 'confused', 'laughing') - ELENG 225D final project" 
+							description="Masque is a transformer encoder model that uses auditory features as intermediaries to convert monotonous audio into expressive ones (from the set of 'happy', 'sad', 'confused', 'laughing') - ELENG 225D Final Project" 
 							github="https://github.com/jianzhi-1/masque-prod"
 							report="https://github.com/jianzhi-1/masque/blob/main/report.pdf"
 							demo="https://github.com/jianzhi-1/masque/blob/main/presentation.pdf"
@@ -517,9 +519,15 @@ const App = () => {
 							/>
 
 							<Project image={switchingautoregressive} alt="switching autoregressive" title="Forecasting U.S.'s Unemployment Rate"
-							description="Using linear, autoregressive and switching AR models to predict U.S.'s unemployment rate; implying out the regime shifts in the economy - STAT 230A final project" 
+							description="Using linear, autoregressive and switching AR models to predict U.S.'s unemployment rate; implying out the regime shifts in the economy - STAT 230A Final Project" 
 							github="https://github.com/jianzhi-1/US-Unemployment-Switching-Model"
 							report="https://github.com/jianzhi-1/US-Unemployment-Switching-Model/blob/main/230Areport.pdf"
+							/>
+
+							<Project image={garch} alt="garch" title="Applications of Bootstrap and Shrinkage in the GARCH Model"
+							description="A creative demonstration of GARCH model's volatility prediction intervals by bootstrapping the innovation terms and applying shrinkage - STAT 215B Final Project" 
+							github="https://github.com/jianzhi-1/GARCH-Prediction"
+							report={STAT215BFINAL}
 							/>
 
 							<Project image={twoRoneBLLM} alt="2R1BLLM" title="Two Rooms and a Boom (LLM Version)"
