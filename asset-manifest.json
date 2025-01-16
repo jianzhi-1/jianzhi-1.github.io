@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.363c1f3e.chunk.css",
-    "main.js": "/static/js/main.94981d86.chunk.js",
-    "main.js.map": "/static/js/main.94981d86.chunk.js.map",
+    "main.js": "/static/js/main.11505ebe.chunk.js",
+    "main.js.map": "/static/js/main.11505ebe.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.0ed996b0.js",
     "runtime-main.js.map": "/static/js/runtime-main.0ed996b0.js.map",
     "static/js/2.a6838890.chunk.js": "/static/js/2.a6838890.chunk.js",
@@ -33,6 +33,7 @@
     "static/media/170MT2.58aab456.pdf": "/static/media/170MT2.58aab456.pdf",
     "static/media/171Final.363828dc.pdf": "/static/media/171Final.363828dc.pdf",
     "static/media/210BFinal.a157a3cb.pdf": "/static/media/210BFinal.a157a3cb.pdf",
+    "static/media/215BFinal.a979da54.pdf": "/static/media/215BFinal.a979da54.pdf",
     "static/media/218AFinal.408662fc.pdf": "/static/media/218AFinal.408662fc.pdf",
     "static/media/222AFinal.a74b6f3e.pdf": "/static/media/222AFinal.a74b6f3e.pdf",
     "static/media/222AMT1.9161e2fa.pdf": "/static/media/222AMT1.9161e2fa.pdf",
@@ -51,6 +52,7 @@
     "static/media/f.966a1632.jpg": "/static/media/f.966a1632.jpg",
     "static/media/fun.ad784377.jpeg": "/static/media/fun.ad784377.jpeg",
     "static/media/g.785f2f91.jpg": "/static/media/g.785f2f91.jpg",
+    "static/media/garch.a0772a94.png": "/static/media/garch.a0772a94.png",
     "static/media/h.292ebd58.jpg": "/static/media/h.292ebd58.jpg",
     "static/media/i.a174f027.jpg": "/static/media/i.a174f027.jpg",
     "static/media/j.b2e6a13a.jpg": "/static/media/j.b2e6a13a.jpg",
@@ -66,6 +68,6 @@
     "static/js/runtime-main.0ed996b0.js",
     "static/js/2.a6838890.chunk.js",
     "static/css/main.363c1f3e.chunk.css",
-    "static/js/main.94981d86.chunk.js"
+    "static/js/main.11505ebe.chunk.js"
   ]
 }
