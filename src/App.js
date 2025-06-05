@@ -1,4 +1,4 @@
-import avatar from './static/avatar.jpeg';
+import avatar from './static/avatar.png';
 import fun from './static/fun.jpeg';
 import './App.css';
 import React from 'react'
@@ -178,7 +178,7 @@ const App = () => {
 		  			<Grid container spacing={2}>
 		  				<Grid item xs={6}>
 							<div>
-								<p style={{fontSize:"120%"}}>I am Jianzhi, currently a senior at University of California, Berkeley.</p>
+								<p style={{fontSize:"120%"}}>I am Jianzhi, and I (most recently) graduated from the University of California, Berkeley.</p>
 								<p style={{fontSize:"120%"}}>I love discussing about Mathematics and Computer Science. Feel free to approach me about these two subjects anytime!</p>
 								<p style={{fontSize:"120%"}}>Outside the realm of academics, I enjoy playing Ultimate Frisbee, hiking, and running.</p>
 							</div>
@@ -267,7 +267,12 @@ const App = () => {
 			["INDENG 221", "Introduction to Financial Engineering"]
 		];
 
-		const spring25 = [];
+		const spring25 = [
+			["COMPSCI 152", "Computer Architecture and Engineering 💎"],
+			["COMPSCI 161", "Computer Security"],
+			["COMPSCI 262A", "Advanced Topics in Computer Systems"],
+			["EECS 251B", "Advanced Digital Integrated Circuits and Systems"]
+		];
 
 		return (
 			<Box sx={{ display: 'flex' }}>
@@ -483,9 +488,22 @@ const App = () => {
 							<Typography>Spring 2025 🍃</Typography>
 							</AccordionSummary>
 							<AccordionDetails>
-							<Typography>
-								Coming soon!
-							</Typography>
+							{spring25.map((item) => (<Typography>
+									<b>{item[0]}</b>: {item[1]} {item.length > 2 ? (
+									<span>
+										[
+										{Array.from({ length: item.length - 2 }).map((_, index) => (
+										<span key={index}>
+											<a href={item[index + 2]} target="_blank">
+											notes
+											</a>
+											{index !== item.length - 3 ? ", " : ""}
+										</span>
+										))}
+										]
+									</span>
+									) : ""}
+								</Typography>))}
 							</AccordionDetails>
 						</Accordion>
 					</div>
@@ -548,7 +566,7 @@ const App = () => {
 							/>
 		
 							<Project image={darbouxparser} alt="darboux parser" title="Darboux Parser"
-							description="A simple BNF parser to test the complexity between two matching algorithms - Created for CS61A A+ Project" 
+							description="A simple BNF parser to test the complexity between two matching algorithms - Created for CS 61A A+ Project" 
 							github="https://github.com/jianzhi-1/darboux-parser"
 							/>
 
