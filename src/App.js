@@ -38,6 +38,10 @@ import masqueimage from './static/masque.png'
 import worthyimage from './static/worthy.png'
 import branchpredictor from './static/branchpredictor.png'
 import garch from './static/garch.png'
+import transactionscheduling from './static/transaction-scheduling.png';
+import llmaos from './static/llmaos.png';
+import usb2 from './static/usb2.png';
+import officeonfire from './static/corpse.gif';
 
 import CS170MT1 from './static/170MT1.pdf';
 import CS170MT2 from './static/170MT2.pdf';
@@ -257,7 +261,7 @@ const App = () => {
 		];
 
 		const fall24 = [
-			["COMPSCI 164", "Programming Languages and Compilers"],
+			["COMPSCI 164", "Programming Languages and Compilers 💎"],
 			["COMPSCI 168", "Introduction to the Internet: Architecture and Protocols 💎"],
 			["COMPSCI 198", "Linux System Administration Decal"],
 			["COMPSCI 288", "Natural Language Processing"],
@@ -479,7 +483,7 @@ const App = () => {
 							</AccordionDetails>
 						</Accordion>
 						<br></br>
-						<Accordion>
+						<Accordion defaultExpanded>
 							<AccordionSummary
 							expandIcon={<ExpandMoreIcon />}
 							aria-controls="panel2a-content"
@@ -522,6 +526,32 @@ const App = () => {
 						<br></br>
 
 						<Grid container spacing={2}>
+
+							<Project image={officeonfire} alt="office-on-fire-image" title="Office On Fire"
+							description="Office on Fire is a strategy escape-room game, playable solo or in multiplayer, where you survive a burning office tower with the help of clever items. - Submitted to Tencent Cloud EdgeOne Hackathon" 
+							github="https://github.com/Twisted-Balloon-Studios/office-on-fire"
+							demo="https://www.youtube.com/watch?v=m6WKtPzR9sY"
+							tryitout="https://office-on-fire.edgeone.app/"
+							/>
+
+							<Project image={usb2} alt="usb2-image" title="Integration and Verification of USB 2.0"
+							description="We integrated the USB 2.0 with Hammer in the Chipyard environment up to the PnR step and verified the digital components (RX Logic → ULPI → TX Logic). We also attempted to fix the DRC and LVS errors. - EECS 251B Final Project" 
+							report=""
+							/>
+
+							<Project image={transactionscheduling} alt="transaction-scheduling-image" title="Investigations in Optimal Transaction Scheduling"
+							description="A class research project in which we formulated the transaction scheduling problem as a linear program and attempted to find a good heuristic for solving it. The primary method involved limiting the time frame to schedule and the candidate pool (kernel-based scheduling); however, these did not beat the current state of the art (Shortest Makespan First). Some deep Q-learning variants were also attempted. - CS 262A Project" 
+							github="https://github.com/jianzhi-1/db-workload-sim"
+							report="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2025/EECS-2025-131.pdf"
+							/>
+
+							<Project image={llmaos} alt="llamos-image" title="LLMaOS"
+							description="LLMaOS is a voice-controlled system, designed to help users navigate a screened device without touch. The design mimics the traditional computer architecture stack, with layers enhanced by LLM capabilities. The system also has the ability to analyse screenshots at discrete time intervals, which can influence its code-generation. - Submitted at TreeHacks 2025 🌲" 
+							github="https://github.com/jianzhi-1/LLMaOS"
+							devpost="https://devpost.com/software/llmaos"
+							demo="https://www.youtube.com/watch?v=ECTOJ7sqNEE"
+							report=""
+							/>
 
 							<Project image={masqueimage} alt="masque-image" title="Monotonous-to-Expressive Audio Converter"
 							description="Masque is a transformer encoder model that uses auditory features as intermediaries to convert monotonous audio into expressive ones (from the set of 'happy', 'sad', 'confused', 'laughing') - ELENG 225D Final Project" 
