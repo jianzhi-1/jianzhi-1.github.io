@@ -537,11 +537,11 @@ const App = () => {
 
 							<Project image={usb2} alt="usb2-image" title="Integration and Verification of USB 2.0"
 							description="We integrated the USB 2.0 with Hammer in the Chipyard environment up to the PnR step and verified the digital components (RX Logic → ULPI → TX Logic). We also attempted to fix the DRC and LVS errors. - EECS 251B Final Project" 
-							report=""
+							report="https://github.com/jianzhi-1/eecs251b/blob/main/sp25_251_report.pdf"
 							/>
 
 							<Project image={transactionscheduling} alt="transaction-scheduling-image" title="Investigations in Optimal Transaction Scheduling"
-							description="We attempted to solve the transaction scheduling problem by formulating it as a linear program and trying various approximations, focusing on &quot;kernel-based scheduling&quot;. This did not beat the current state of the art (Shortest Makespan First) however. - CS 262A Project" 
+							description="An attempt to solve the transaction scheduling problem by formulating it as a linear program and trying various approximations, focusing on &quot;kernel-based scheduling&quot;. This did not beat the current state of the art (Shortest Makespan First) however. - CS 262A Project" 
 							github="https://github.com/jianzhi-1/db-workload-sim"
 							report="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2025/EECS-2025-131.pdf"
 							poster="https://drive.google.com/file/d/1gcDrQcNIExNEASNylh405Kmo4edSBSeB/"
