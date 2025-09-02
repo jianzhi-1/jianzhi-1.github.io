@@ -67,6 +67,7 @@ import STAT150MT2 from './static/150MT2.pdf';
 import STAT150FINAL from './static/150Final.pdf';
 import STAT153MT from './static/153MT.pdf';
 import STAT153FINAL from './static/153Final.pdf';
+import STAT210AFINAL from './static/210AFinal.pdf';
 import STAT210BFINAL from './static/210BFinal.pdf';
 import STAT230AMT from './static/230AMT.pdf';
 import STAT215BFINAL from './static/215BFinal.pdf';
@@ -183,8 +184,8 @@ const App = () => {
 		  				<Grid item xs={6}>
 							<div>
 								<p style={{fontSize:"120%"}}>I am Jianzhi, and I (most recently) graduated from the University of California, Berkeley.</p>
-								<p style={{fontSize:"120%"}}>I love discussing about Mathematics and Computer Science. Feel free to approach me about these two subjects anytime!</p>
-								<p style={{fontSize:"120%"}}>Outside the realm of academics, I enjoy playing Ultimate Frisbee, hiking, and running.</p>
+								<p style={{fontSize:"120%"}}>These days, I enjoy hiking, running, and simply wandering around.</p>
+								<p style={{fontSize:"120%"}}>In the past, I created a set of <a href="https://github.com/jianzhi-1/physics-notes/tree/master" target="_blank">lecture notes</a> for Physics Olympiad - hopefully, they'll be helpful to whoever decides to take on that journey.</p>
 							</div>
 			  			</Grid>
 			  			<Grid item xs={6}>
@@ -246,7 +247,7 @@ const App = () => {
 			["MATH C218A / STAT C205A", "Probability Theory", MATH218AFINAL],
 			["MATH 222A", "Partial Differential Equations", MATH222AMT1, MATH222AMT2, MATH222AFINAL],
 			["PSYCH C120", "Basic Issues in Cognition"],
-			["STAT 210A", "Theoretical Statistics 💎"]
+			["STAT 210A", "Theoretical Statistics 💎", STAT210AFINAL]
 		];
 
 		const spring24 = [
