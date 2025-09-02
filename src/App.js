@@ -543,6 +543,7 @@ const App = () => {
 							description="A class research project in which we formulated the transaction scheduling problem as a linear program and attempted to find a good heuristic for solving it. The primary method involved limiting the time frame to schedule and the candidate pool (kernel-based scheduling); however, these did not beat the current state of the art (Shortest Makespan First). Some deep Q-learning variants were also attempted. - CS 262A Project" 
 							github="https://github.com/jianzhi-1/db-workload-sim"
 							report="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2025/EECS-2025-131.pdf"
+							poster="https://drive.google.com/file/d/1gcDrQcNIExNEASNylh405Kmo4edSBSeB/"
 							/>
 
 							<Project image={llmaos} alt="llamos-image" title="LLMaOS"
