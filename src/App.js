@@ -528,7 +528,7 @@ const App = () => {
 						<Grid container spacing={2}>
 
 							<Project image={officeonfire} alt="office-on-fire-image" title="Office On Fire"
-							description="Office on Fire is a strategy escape-room game, playable solo or in multiplayer, where you survive a burning office tower with the help of clever items. - Submitted to Tencent Cloud EdgeOne Hackathon" 
+							description="A strategy/escape-room game, playable solo or in multiplayer, where you survive a burning office tower with the help of clever items. 🔥🏢🧯 - Submitted to Tencent Cloud EdgeOne Hackathon" 
 							github="https://github.com/Twisted-Balloon-Studios/office-on-fire"
 							demo="https://www.youtube.com/watch?v=m6WKtPzR9sY"
 							tryitout="https://office-on-fire.edgeone.app/"
@@ -540,14 +540,14 @@ const App = () => {
 							/>
 
 							<Project image={transactionscheduling} alt="transaction-scheduling-image" title="Investigations in Optimal Transaction Scheduling"
-							description="A class research project in which we formulated the transaction scheduling problem as a linear program and attempted to find a good heuristic for solving it. The primary method involved limiting the time frame to schedule and the candidate pool (kernel-based scheduling); however, these did not beat the current state of the art (Shortest Makespan First). Some deep Q-learning variants were also attempted. - CS 262A Project" 
+							description="We attempted to solve the transaction scheduling problem by formulating it as a linear program and trying various approximations, focusing on &quot;kernel-based scheduling&quot;. This did not beat the current state of the art (Shortest Makespan First) however. - CS 262A Project" 
 							github="https://github.com/jianzhi-1/db-workload-sim"
 							report="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2025/EECS-2025-131.pdf"
 							poster="https://drive.google.com/file/d/1gcDrQcNIExNEASNylh405Kmo4edSBSeB/"
 							/>
 
 							<Project image={llmaos} alt="llamos-image" title="LLMaOS"
-							description="LLMaOS is a voice-controlled system, designed to help users navigate a screened device without touch. The design mimics the traditional computer architecture stack, with layers enhanced by LLM capabilities. The system also has the ability to analyse screenshots at discrete time intervals, which can influence its code-generation. - Submitted at TreeHacks 2025 🌲" 
+							description="LLMaOS is a voice-controlled system that is designed to help users navigate a screened device without touch. It mimics the traditional computer architecture stack, with layers enhanced by LLM and VLM capabilities. - Submitted at TreeHacks 2025 🌲" 
 							github="https://github.com/jianzhi-1/LLMaOS"
 							devpost="https://devpost.com/software/llmaos"
 							demo="https://www.youtube.com/watch?v=ECTOJ7sqNEE"
