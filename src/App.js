@@ -263,7 +263,7 @@ const App = () => {
 
 		const fall24 = [
 			["COMPSCI 164", "Programming Languages and Compilers 💎"],
-			["COMPSCI 168", "Introduction to the Internet: Architecture and Protocols 💎"],
+			["COMPSCI 168", "Introduction to the Internet: Architecture and Protocols"],
 			["COMPSCI 198", "Linux System Administration Decal"],
 			["COMPSCI 288", "Natural Language Processing"],
 			["ECON C171", "Development Economics", ECON171FINAL],
