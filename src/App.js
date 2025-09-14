@@ -1,4 +1,4 @@
-import avatar from './static/avatar.png';
+import avatar from './static/avatar.jpeg';
 import fun from './static/fun.jpeg';
 import './App.css';
 import React from 'react'
@@ -41,7 +41,8 @@ import garch from './static/garch.png'
 import transactionscheduling from './static/transaction-scheduling.png';
 import llmaos from './static/llmaos.png';
 import usb2 from './static/usb2.png';
-import officeonfire from './static/corpse.gif';
+import officeonfire from './static/corpse_rect.gif';
+import aimp from './static/aimp.png';
 
 import CS170MT1 from './static/170MT1.pdf';
 import CS170MT2 from './static/170MT2.pdf';
@@ -528,8 +529,14 @@ const App = () => {
 
 						<Grid container spacing={2}>
 
+							<Project image={aimp} alt="ai-mp-image" title="AI Member of Parliament"
+							description="An event-driven agentic system that reimagines how Singapore's Meet-the-People sessions can work! - Submitted to TiDB AgentX Hackathon 2025" 
+							github="https://github.com/Mystic-Queen-Labs/AI-MP/"
+							demo="https://www.youtube.com/watch?v=yOWYG1xiyyA"
+							/>
+
 							<Project image={officeonfire} alt="office-on-fire-image" title="Office On Fire"
-							description="A strategy/escape-room game, playable solo or in multiplayer, where you survive a burning office tower with the help of clever items. 🔥🏢🧯 - Submitted to Tencent Cloud EdgeOne Hackathon" 
+							description="A strategy/escape-room game, playable solo or in multiplayer, where you survive a burning office tower with the help of clever items. - 🥈 Won 2nd place in the preliminary round of Tencent Cloud EdgeOne Hackathon" 
 							github="https://github.com/Twisted-Balloon-Studios/office-on-fire"
 							demo="https://www.youtube.com/watch?v=m6WKtPzR9sY"
 							tryitout="https://office-on-fire.edgeone.app/"
