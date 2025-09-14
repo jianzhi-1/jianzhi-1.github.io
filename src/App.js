@@ -645,18 +645,12 @@ const Sketches = () => (
 			<p style={{fontSize:"300%"}}>Sketches</p>
 			<p style={{fontSize:"120%"}}>Below is a collection of a selected few of my sketches.</p>
 
-
 			<Grid container spacing={2}>
-				<Sketch image={as} alt="Sketch A"/>
-				<Sketch image={bs} alt="Sketch B"/>
-				<Sketch image={cs} alt="Sketch C"/>
-				<Sketch image={ds} alt="Sketch D"/>
-				<Sketch image={es} alt="Sketch E"/>
-				<Sketch image={fs} alt="Sketch F"/>
-				<Sketch image={gs} alt="Sketch G"/>
-				<Sketch image={hs} alt="Sketch H"/>
-				<Sketch image={is} alt="Sketch I"/>
-				<Sketch image={js} alt="Sketch J"/>
+				{[as, bs, cs, ds, es, fs, gs, hs, is, js].map((img, idx) => (
+					<Grid item xs={12} sm={6} md={4} lg={3} key={idx}>
+					<Sketch image={img} alt={`Sketch ${String.fromCharCode(65 + idx)}`} />
+					</Grid>
+				))}
 			</Grid>
 		</div>
 		</Box>

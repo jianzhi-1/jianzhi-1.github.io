@@ -1,24 +1,25 @@
-import React from 'react';
-import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
 
 export default function Sketch({image, alt}) {
-
     return (
-        <Grid item xs={3}>
-            <div style={{display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',}}>
-                <Card sx={{ maxWidth: 345 }}>
-                        <CardMedia
-                        component="img"
-                        height="345"
-                        image={image}
-                        alt={alt}
-                        />
-                </Card>
-            </div>
-	    </Grid>
+        <Card       
+            sx={{
+                width: "100%",         // fill grid cell width
+                aspectRatio: "1 / 1",  // force square
+                overflow: "hidden"     // crop overflow
+            }}>
+            <CardMedia
+                component="img"
+                image={image}
+                alt={alt}
+                sx={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover", // crop to fill square
+                    objectPosition: "center" // keep center focus
+                }}
+            />
+        </Card>
     );
 }
