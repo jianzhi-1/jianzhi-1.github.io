@@ -117,48 +117,43 @@ const Item = styled(Paper)(({ theme }) => ({
 const Home = () => {
 	const navigate = useNavigate();
 	return (
-		<div>
+		<div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
 			<br></br>
 			<br></br>
-			<div style={{display: 'flex',
-			alignItems: 'center',
-			justifyContent: 'center',}}>
-				<Avatar alt="Jianzhi Wang" src={avatar} sx={{ width: 384, height: 384 }}/>
-			</div>
+		
+			<Avatar
+				alt="Jianzhi Wang"
+				src={avatar}
+				sx={{ width: { xs: 150, sm: 250, md: 384 }, height: { xs: 150, sm: 250, md: 384 }, mb: 2 }}
+			/>
 
-			<div style={{display: 'flex',
-			alignItems: 'center',
-			justifyContent: 'center',}}>
-				<h1 style={{fontSize:"300%", fontFamily:"Helvetica"}}>Jianzhi Wang</h1>
-			</div>
+			<h1 style={{ fontSize: "clamp(1.5rem, 6vw, 3rem)", fontFamily: "Helvetica", fontWeight: "bold", margin: 0, marginBottom: "0.5rem" }}>
+				Jianzhi Wang
+			</h1>
 
-			<div style={{display: 'flex',
-			alignItems: 'center',
-			justifyContent: 'center', marginTop:"-70px"}}>
-				<h6 style={{fontSize:"120%", fontFamily:"Helvetica"}}>Berkeley, CA</h6>
-				<h6 style={{fontSize:"120%", fontFamily:"Helvetica"}}>&nbsp;·&nbsp;</h6>
-				<h6 style={{fontSize:"120%", fontFamily:"Helvetica"}}>jianzhi@</h6>
-			</div>
+			<Stack direction={{ xs: "column", sm: "row" }} spacing={0.5} justifyContent="center" alignItems="center" sx={{ marginBottom: 2 }}>
+				<h6 style={{ fontSize: "clamp(0.8rem, 3vw, 1rem)", fontFamily: "Helvetica", fontWeight: "bold", margin: 0 }}>Berkeley, CA</h6>
+				<h6 style={{ fontSize: "clamp(0.8rem, 3vw, 1rem)", fontFamily: "Helvetica", fontWeight: "bold", margin: 0 }}>&nbsp;·&nbsp;</h6>
+				<h6 style={{ fontSize: "clamp(0.8rem, 3vw, 1rem)", fontFamily: "Helvetica", fontWeight: "bold", margin: 0 }}>jianzhi@</h6>
+			</Stack>
 
-			<div style={{display: 'flex',
-			alignItems: 'center',
-			justifyContent: 'center',}}>
-				<Stack spacing={2} direction="row">
-					{allPages.map((item) => (<Button variant="text" sx={{ color: (theme) => `${theme.palette.primary.main} !important` }} key={item.name} onClick={() => navigate(item.path)}>{item.name}</Button>))}
-				</Stack>
-			</div>
+			<Stack spacing={2} direction={{ xs: "column", sm: "row" }} alignItems="center" justifyContent="center" sx={{ marginBottom: 2 }}>
+				{allPages.map((item) => (
+				<Button
+					key={item.name}
+					variant="text"
+					sx={{ color: (theme) => `${theme.palette.primary.main} !important` }}
+					onClick={() => navigate(item.path)}
+				>
+					{item.name}
+				</Button>
+				))}
+			</Stack>
 
-			<br></br>
-
-			<div style={{display: 'flex',
-			alignItems: 'center',
-			justifyContent: 'center',}}>
-
-				<Stack spacing={2} direction="row">
-					<a href="https://github.com/jianzhi-1"><GitHubIcon/></a>
-					<a href="https://devpost.com/jianzhi-1"><LogoDevIcon/></a>
-				</Stack>
-			</div>
+			<Stack spacing={2} direction="row">
+				<a href="https://github.com/jianzhi-1" target="_blank"><GitHubIcon/></a>
+				<a href="https://devpost.com/jianzhi-1" target="_blank"><LogoDevIcon/></a>
+			</Stack>
 
 		</div>
 	);
