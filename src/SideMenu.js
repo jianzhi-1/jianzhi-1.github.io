@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from "react-router-dom";
 import Drawer from '@mui/material/Drawer';
 import Avatar from '@mui/material/Avatar';
 import Divider from '@material-ui/core/Divider';
@@ -17,9 +18,10 @@ import PaletteIcon from '@mui/icons-material/Palette';
 import QuestionMarkIcon from '@mui/icons-material/QuestionMark';
 import ClassIcon from '@mui/icons-material/Class';
   
-export default function SideMenu({setPage}) {
+export default function SideMenu() {
 
     const drawerWidth = 158;
+    const navigate = useNavigate();
 
     const IconList = [
         <HomeIcon/>,
@@ -31,7 +33,15 @@ export default function SideMenu({setPage}) {
         <FitnessCenterIcon/>,
         <PaletteIcon/>
     ]
-  
+
+    const pages = [
+      { name: 'Home', path: '/' },
+      { name: 'About', path: '/about' },
+      { name: 'Coursework', path: '/coursework' },
+      { name: 'Projects', path: '/projects' },
+      { name: 'Sketches', path: '/sketches' }
+    ];
+
     return (
         <Drawer
         sx={{
@@ -54,13 +64,12 @@ export default function SideMenu({setPage}) {
         </div>
         <Divider />
         <List>
-          {['Home', 'About', 'Coursework', 'Projects', 'Sketches'].map((text, index) => (
-            <ListItem button key={text} onClick={() => {
-                setPage(text.toLowerCase());}}>
+          {pages.map((page, index) => (
+            <ListItem button key={page.name} onClick={() => navigate(page.path)}>
               <ListItemIcon>
                 {(index < IconList.length) ? IconList[index] : <QuestionMarkIcon />}
               </ListItemIcon>
-              <ListItemText primary={text} style={{marginLeft:"-20px", fontFamily:"sans-serif"}} />
+              <ListItemText primary={page.name} style={{marginLeft:"-20px", fontFamily:"sans-serif"}} />
             </ListItem>
           ))}
         </List>

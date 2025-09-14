@@ -16,18 +16,19 @@ export default function Project({image, alt, title, description, github, devpost
                 alignItems: 'center',
                 justifyContent: 'center',}}>
                 <Card sx={{ maxWidth: 345 }}>
-                    <CardActionArea>
+                    <CardActionArea sx={{ display: 'flex', flexDirection: 'column', alignItems: 'stretch' }}>
                         <CardMedia
                         component="img"
                         height="140"
                         image={image}
                         alt={alt}
+                        sx={{ width: '100%' }} // ensures image fills the Card width
                         />
-                        <CardContent>
-                            <Typography gutterBottom variant="h5" component="div">
+                        <CardContent sx={{ width: '100%' }}>
+                            <Typography gutterBottom variant="h5" component="div" sx={{ px:2 }}>
                                 {title}
                             </Typography>
-                            <Typography variant="body2" color="text.secondary">
+                            <Typography variant="body2" color="text.secondary" sx={{ px: 2 }}>
                                 {description}
                             </Typography>
                         </CardContent>
