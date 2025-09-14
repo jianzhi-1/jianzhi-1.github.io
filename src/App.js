@@ -518,116 +518,151 @@ const Projects = () => (
 				<br></br>
 
 				<Grid container spacing={2}>
+					<Grid item xs={12} sm={6} md={4}>
+						<Project image={aimp} alt="ai-mp-image" title="AI Member of Parliament"
+						description="An event-driven agentic system that reimagines how Singapore's Meet-the-People sessions can work! - Submitted to TiDB AgentX Hackathon 2025" 
+						github="https://github.com/Mystic-Queen-Labs/AI-MP/"
+						demo="https://www.youtube.com/watch?v=yOWYG1xiyyA"
+						/>
+					</Grid>
 
-					<Project image={aimp} alt="ai-mp-image" title="AI Member of Parliament"
-					description="An event-driven agentic system that reimagines how Singapore's Meet-the-People sessions can work! - Submitted to TiDB AgentX Hackathon 2025" 
-					github="https://github.com/Mystic-Queen-Labs/AI-MP/"
-					demo="https://www.youtube.com/watch?v=yOWYG1xiyyA"
-					/>
+					<Grid item xs={12} sm={6} md={4}>
+						<Project image={officeonfire} alt="office-on-fire-image" title="Office On Fire"
+						description="A strategy/escape-room game, playable solo or in multiplayer, where you survive a burning office tower with the help of clever items. - 🥈 Won 2nd place in the preliminary round of Tencent Cloud EdgeOne Hackathon" 
+						github="https://github.com/Twisted-Balloon-Studios/office-on-fire"
+						demo="https://www.youtube.com/watch?v=m6WKtPzR9sY"
+						tryitout="https://office-on-fire.edgeone.app/"
+						/>
+					</Grid>
 
-					<Project image={officeonfire} alt="office-on-fire-image" title="Office On Fire"
-					description="A strategy/escape-room game, playable solo or in multiplayer, where you survive a burning office tower with the help of clever items. - 🥈 Won 2nd place in the preliminary round of Tencent Cloud EdgeOne Hackathon" 
-					github="https://github.com/Twisted-Balloon-Studios/office-on-fire"
-					demo="https://www.youtube.com/watch?v=m6WKtPzR9sY"
-					tryitout="https://office-on-fire.edgeone.app/"
-					/>
+					<Grid item xs={12} sm={6} md={4}>
+						<Project image={usb2} alt="usb2-image" title="Integration and Verification of USB 2.0"
+						description="We integrated the USB 2.0 with Hammer in the Chipyard environment up to the PnR step and verified the digital components (RX Logic → ULPI → TX Logic). We also attempted to fix the DRC and LVS errors. - EECS 251B Final Project" 
+						report="https://github.com/jianzhi-1/eecs251b/blob/main/sp25_251_report.pdf"
+						/>
+					</Grid>
 
-					<Project image={usb2} alt="usb2-image" title="Integration and Verification of USB 2.0"
-					description="We integrated the USB 2.0 with Hammer in the Chipyard environment up to the PnR step and verified the digital components (RX Logic → ULPI → TX Logic). We also attempted to fix the DRC and LVS errors. - EECS 251B Final Project" 
-					report="https://github.com/jianzhi-1/eecs251b/blob/main/sp25_251_report.pdf"
-					/>
+					<Grid item xs={12} sm={6} md={4}>
+						<Project image={transactionscheduling} alt="transaction-scheduling-image" title="Investigations in Optimal Transaction Scheduling"
+						description="An attempt to solve the transaction scheduling problem by formulating it as a linear program and trying various approximations, focusing on &quot;kernel-based scheduling&quot;. This did not beat the current state of the art (Shortest Makespan First) however. - CS 262A Project" 
+						github="https://github.com/jianzhi-1/db-workload-sim"
+						report="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2025/EECS-2025-131.pdf"
+						poster="https://drive.google.com/file/d/1gcDrQcNIExNEASNylh405Kmo4edSBSeB/"
+						/>
+					</Grid>
 
-					<Project image={transactionscheduling} alt="transaction-scheduling-image" title="Investigations in Optimal Transaction Scheduling"
-					description="An attempt to solve the transaction scheduling problem by formulating it as a linear program and trying various approximations, focusing on &quot;kernel-based scheduling&quot;. This did not beat the current state of the art (Shortest Makespan First) however. - CS 262A Project" 
-					github="https://github.com/jianzhi-1/db-workload-sim"
-					report="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2025/EECS-2025-131.pdf"
-					poster="https://drive.google.com/file/d/1gcDrQcNIExNEASNylh405Kmo4edSBSeB/"
-					/>
+					<Grid item xs={12} sm={6} md={4}>
+						<Project image={llmaos} alt="llamos-image" title="LLMaOS"
+						description="LLMaOS is a voice-controlled system that is designed to help users navigate a screened device without touch. It mimics the traditional computer architecture stack, with layers enhanced by LLM and VLM capabilities. - Submitted at TreeHacks 2025 🌲" 
+						github="https://github.com/jianzhi-1/LLMaOS"
+						devpost="https://devpost.com/software/llmaos"
+						demo="https://www.youtube.com/watch?v=ECTOJ7sqNEE"
+						report=""
+						/>
+					</Grid>
 
-					<Project image={llmaos} alt="llamos-image" title="LLMaOS"
-					description="LLMaOS is a voice-controlled system that is designed to help users navigate a screened device without touch. It mimics the traditional computer architecture stack, with layers enhanced by LLM and VLM capabilities. - Submitted at TreeHacks 2025 🌲" 
-					github="https://github.com/jianzhi-1/LLMaOS"
-					devpost="https://devpost.com/software/llmaos"
-					demo="https://www.youtube.com/watch?v=ECTOJ7sqNEE"
-					report=""
-					/>
+					<Grid item xs={12} sm={6} md={4}>
+						<Project image={masqueimage} alt="masque-image" title="Monotonous-to-Expressive Audio Converter"
+						description="Masque is a transformer encoder model that uses auditory features as intermediaries to convert monotonous audio into expressive ones (from the set of 'happy', 'sad', 'confused', 'laughing') - ELENG 225D Final Project" 
+						github="https://github.com/jianzhi-1/masque-prod"
+						report="https://github.com/jianzhi-1/masque/blob/main/report.pdf"
+						demo="https://github.com/jianzhi-1/masque/blob/main/presentation.pdf"
+						/>
+					</Grid>
 
-					<Project image={masqueimage} alt="masque-image" title="Monotonous-to-Expressive Audio Converter"
-					description="Masque is a transformer encoder model that uses auditory features as intermediaries to convert monotonous audio into expressive ones (from the set of 'happy', 'sad', 'confused', 'laughing') - ELENG 225D Final Project" 
-					github="https://github.com/jianzhi-1/masque-prod"
-					report="https://github.com/jianzhi-1/masque/blob/main/report.pdf"
-					demo="https://github.com/jianzhi-1/masque/blob/main/presentation.pdf"
-					/>
+					<Grid item xs={12} sm={6} md={4}>
+						<Project image={worthyimage} alt="worthy-image" title="Worthy"
+						description="A chatbot that showcases an incredibly smooth multiplexing of realtime conversational abilities, emotion display and graphic rendering - Made at Pear VC Hackathon (Fall) 2024 🍐" 
+						github="https://github.com/jianzhi-1/worthy"
+						demo="https://www.youtube.com/watch?v=XSTgHln8Upg"
+						/>
+					</Grid>
 
-					<Project image={worthyimage} alt="worthy-image" title="Worthy"
-					description="A chatbot that showcases an incredibly smooth multiplexing of realtime conversational abilities, emotion display and graphic rendering - Made at Pear VC Hackathon (Fall) 2024 🍐" 
-					github="https://github.com/jianzhi-1/worthy"
-					demo="https://www.youtube.com/watch?v=XSTgHln8Upg"
-					/>
+					<Grid item xs={12} sm={6} md={4}>
+						<Project image={switchingautoregressive} alt="switching autoregressive" title="Forecasting U.S.'s Unemployment Rate"
+						description="Using linear, autoregressive and switching AR models to predict U.S.'s unemployment rate; implying out the regime shifts in the economy - STAT 230A Final Project" 
+						github="https://github.com/jianzhi-1/US-Unemployment-Switching-Model"
+						report="https://github.com/jianzhi-1/US-Unemployment-Switching-Model/blob/main/230Areport.pdf"
+						/>
+					</Grid>
 
-					<Project image={switchingautoregressive} alt="switching autoregressive" title="Forecasting U.S.'s Unemployment Rate"
-					description="Using linear, autoregressive and switching AR models to predict U.S.'s unemployment rate; implying out the regime shifts in the economy - STAT 230A Final Project" 
-					github="https://github.com/jianzhi-1/US-Unemployment-Switching-Model"
-					report="https://github.com/jianzhi-1/US-Unemployment-Switching-Model/blob/main/230Areport.pdf"
-					/>
+					<Grid item xs={12} sm={6} md={4}>
+						<Project image={garch} alt="garch" title="Applications of Bootstrap and Shrinkage in the GARCH Model"
+						description="A creative demonstration of GARCH model's volatility prediction intervals by bootstrapping the innovation terms and applying shrinkage - STAT 215B Final Project" 
+						github="https://github.com/jianzhi-1/GARCH-Prediction"
+						report={STAT215BFINAL}
+						/>
+					</Grid>
 
-					<Project image={garch} alt="garch" title="Applications of Bootstrap and Shrinkage in the GARCH Model"
-					description="A creative demonstration of GARCH model's volatility prediction intervals by bootstrapping the innovation terms and applying shrinkage - STAT 215B Final Project" 
-					github="https://github.com/jianzhi-1/GARCH-Prediction"
-					report={STAT215BFINAL}
-					/>
+					<Grid item xs={12} sm={6} md={4}>
+						<Project image={twoRoneBLLM} alt="2R1BLLM" title="Two Rooms and a Boom (LLM Version)"
+						description="A variant of the extremely fun board game 'Two Rooms and a Boom', where your opponents are LLMs designed to lie - Submitted to HackMIT 2023 🎈" 
+						github="https://github.com/shinfxh/1-epsilon"
+						devpost="https://devpost.com/software/1-epsilon"
+						/>
+					</Grid>
 
-					<Project image={twoRoneBLLM} alt="2R1BLLM" title="Two Rooms and a Boom (LLM Version)"
-					description="A variant of the extremely fun board game 'Two Rooms and a Boom', where your opponents are LLMs designed to lie - Submitted to HackMIT 2023 🎈" 
-					github="https://github.com/shinfxh/1-epsilon"
-					devpost="https://devpost.com/software/1-epsilon"
-					/>
+					<Grid item xs={12} sm={6} md={4}>
+						<Project image={branchpredictor} alt="RISC-V Processor" title="RISC-V 5-Stage Pipeline Processor"
+						description="A 5-stage RISC-V processor that aims to maximise a predetermined metric - Implemented and tested during Spring 2023's EECS 151" 
+						report="https://github.com/jianzhi-1/eecs251b/blob/main/151/sp23_151_report.pdf"
+						/>
+					</Grid>
 
-					<Project image={branchpredictor} alt="RISC-V Processor" title="RISC-V 5-Stage Pipeline Processor"
-					description="A 5-stage RISC-V processor that aims to maximise a predetermined metric - Implemented and tested during Spring 2023's EECS 151" 
-					report="https://github.com/jianzhi-1/eecs251b/blob/main/151/sp23_151_report.pdf"
-					/>
+					<Grid item xs={12} sm={6} md={4}>
+						<Project image={spillyourtea} alt="spill your tea" title="Spill Your Tea"
+						description="A virtual avatar for every person which is conditioned on their text messages, so that you can chat with another person's patronus when they are away (or not responding to you) - Submitted to Hack&amp;Roll 2023" 
+						github="https://github.com/jianzhi-1/spill-your-tea"
+						devpost="https://devpost.com/software/patronus-g70sv9"
+						/>
+					</Grid>
 
-					<Project image={spillyourtea} alt="spill your tea" title="Spill Your Tea"
-					description="A virtual avatar for every person which is conditioned on their text messages, so that you can chat with another person's patronus when they are away (or not responding to you) - Submitted to Hack&amp;Roll 2023" 
-					github="https://github.com/jianzhi-1/spill-your-tea"
-					devpost="https://devpost.com/software/patronus-g70sv9"
-					/>
+					<Grid item xs={12} sm={6} md={4}>
+						<Project image={darbouxparser} alt="darboux parser" title="Darboux Parser"
+						description="A simple BNF parser to test the complexity between two matching algorithms - Created for CS 61A A+ Project" 
+						github="https://github.com/jianzhi-1/darboux-parser"
+						/>
+					</Grid>
 
-					<Project image={darbouxparser} alt="darboux parser" title="Darboux Parser"
-					description="A simple BNF parser to test the complexity between two matching algorithms - Created for CS 61A A+ Project" 
-					github="https://github.com/jianzhi-1/darboux-parser"
-					/>
+					<Grid item xs={12} sm={6} md={4}>
+						<Project image={starwhale} alt="starwhale" title="Star Whales"
+						description="A gesture-tracking game (powered by planck.js and handtrack.js) - Made for CalHacks 8.0 2021 🧸" 
+						github="https://github.com/jianzhi-1/Star-Whales"
+						devpost="https://devpost.com/software/star-whales"
+						demo="https://www.youtube.com/watch?v=FPRGmSGK9Fk"
+						tryitout="https://zenanana.github.io/Star-Whales/"
+						/>
+					</Grid>
 
-					<Project image={starwhale} alt="starwhale" title="Star Whales"
-					description="A gesture-tracking game (powered by planck.js and handtrack.js) - Made for CalHacks 8.0 2021 🧸" 
-					github="https://github.com/jianzhi-1/Star-Whales"
-					devpost="https://devpost.com/software/star-whales"
-					demo="https://www.youtube.com/watch?v=FPRGmSGK9Fk"
-					tryitout="https://zenanana.github.io/Star-Whales/"
-					/>
+					<Grid item xs={12} sm={6} md={4}>
+						<Project image={justice} alt="justice" title="Justice"
+						description="A React-frontend, Django-backend web application for empowering conversations about social issues - Submitted to HackHarvard 2021" 
+						devpost="https://devpost.com/software/justice-j19kgw"/>
+					</Grid>
 
-					<Project image={justice} alt="justice" title="Justice"
-					description="A React-frontend, Django-backend web application for empowering conversations about social issues - Submitted to HackHarvard 2021" 
-					devpost="https://devpost.com/software/justice-j19kgw"/>
+					<Grid item xs={12} sm={6} md={4}>
+						<Project image={bandung} alt="bandung" title="Bandung"
+						description="An AI-enhanced Whatsapp contact list condenser, built with Twilio API and Wit.AI 🏅 Won 'Most Creative Use of Twilio' award at MLH Robohacks 2021" 
+						github="https://github.com/jianzhi-1/bandung"
+						devpost="https://devpost.com/software/bandung"
+						demo={"https://www.youtube.com/watch?v=MAqnXtNtNt8"}/>
+					</Grid>
 
-					<Project image={bandung} alt="bandung" title="Bandung"
-					description="An AI-enhanced Whatsapp contact list condenser, built with Twilio API and Wit.AI 🏅 Won 'Most Creative Use of Twilio' award at MLH Robohacks 2021" 
-					github="https://github.com/jianzhi-1/bandung"
-					devpost="https://devpost.com/software/bandung"
-					demo={"https://www.youtube.com/watch?v=MAqnXtNtNt8"}/>
+					<Grid item xs={12} sm={6} md={4}>
+						<Project image={pxl} alt="pixelisk" title="PixeLisk"
+						description="A blockchain web application for designing and trading pixel art NFTs, built using Lisk.js 🏅 Won Lisk Community Choice Award at HackOnLisk 2021" 
+						github="https://github.com/jianzhi-1/pixelisk"
+						devpost="https://devpost.com/software/pixelisk"
+						demo={"https://www.youtube.com/watch?v=rodgqOm8SXI"}/>
+					</Grid>
 
-					<Project image={pxl} alt="pixelisk" title="PixeLisk"
-					description="A blockchain web application for designing and trading pixel art NFTs, built using Lisk.js 🏅 Won Lisk Community Choice Award at HackOnLisk 2021" 
-					github="https://github.com/jianzhi-1/pixelisk"
-					devpost="https://devpost.com/software/pixelisk"
-					demo={"https://www.youtube.com/watch?v=rodgqOm8SXI"}/>
-
-					<Project image={bony} alt="battle of new york" title="Battle of New York"
-					description="An AI-powered virtual-reality simulation of superheroes in action 🥉 Third place at Facebook F8 Refresh Hackathon 2021" 
-					github="https://github.com/jianzhi-1/battle-of-new-york"
-					tryitout={"https://winter-fire-muskmelon.glitch.me/"}
-					demo={"https://www.youtube.com/watch?v=z9MDNAkNInU"}/>
+					<Grid item xs={12} sm={6} md={4}>
+						<Project image={bony} alt="battle of new york" title="Battle of New York"
+						description="An AI-powered virtual-reality simulation of superheroes in action 🥉 Third place at Facebook F8 Refresh Hackathon 2021" 
+						github="https://github.com/jianzhi-1/battle-of-new-york"
+						tryitout={"https://winter-fire-muskmelon.glitch.me/"}
+						demo={"https://www.youtube.com/watch?v=z9MDNAkNInU"}/>
+					</Grid>
 				</Grid>
 			
 			</div>
