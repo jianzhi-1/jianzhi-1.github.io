@@ -126,6 +126,7 @@ const Home = () => {
 				src={avatar}
 				sx={{ width: { xs: 150, sm: 250, md: 384 }, height: { xs: 150, sm: 250, md: 384 }, mb: 2 }}
 			/>
+			<br></br>
 
 			<h1 style={{ fontSize: "clamp(1.5rem, 6vw, 3rem)", fontFamily: "Helvetica", fontWeight: "bold", margin: 0, marginBottom: "0.5rem" }}>
 				Jianzhi Wang
@@ -154,39 +155,54 @@ const Home = () => {
 				<a href="https://github.com/jianzhi-1" target="_blank"><GitHubIcon/></a>
 				<a href="https://devpost.com/jianzhi-1" target="_blank"><LogoDevIcon/></a>
 			</Stack>
+			<br></br>
+			<br></br>
 
 		</div>
 	);
 };
 
 const About = () => (
-	<Box sx={{ display: 'flex' }}>
+  <Box sx={{ display: 'flex' }}>
+    <SideMenu />
 
-		<SideMenu/>
-	
-		<Box sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3 }}>
-			<p style={{fontSize:"300%"}}>Hi there! 👋</p>
-			<Grid container spacing={2}>
-				<Grid item xs={6}>
-					<div>
-						<p style={{fontSize:"120%"}}>I am Jianzhi, and I (most recently) graduated from the University of California, Berkeley.</p>
-						<p style={{fontSize:"120%"}}>These days, I enjoy hiking, running, and simply wandering around.</p>
-						<p style={{fontSize:"120%"}}>In the past, I created a set of <a href="https://github.com/jianzhi-1/physics-notes/tree/master" target="_blank">lecture notes</a> for Physics Olympiad - hopefully, they'll be helpful to whoever decides to take on that journey.</p>
-					</div>
-				</Grid>
-				<Grid item xs={6}>
-					<Card>
-						<CardMedia
-						component="img"
-						height="800"
-						image={fun}
-						alt="logo"
-						/>
-					</Card>
-				</Grid>
-			</Grid>
-		</Box>
-	</Box>
+    <Box sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3 }}>
+	  <p style={{fontSize:"300%"}}>Hi there! 👋</p>
+
+      <Grid container spacing={2} alignItems="flex-start">
+        {/* Text column */}
+        <Grid item xs={12} md={6}>
+          <Stack spacing={2}>
+            <Typography sx={{ fontSize: "clamp(1rem, 3vw, 1.2rem)" }}>
+              I am Jianzhi, and I (most recently) graduated from the University of California, Berkeley.
+            </Typography>
+            <Typography sx={{ fontSize: "clamp(1rem, 3vw, 1.2rem)" }}>
+              These days, I enjoy hiking, running, and simply wandering around.
+            </Typography>
+            <Typography sx={{ fontSize: "clamp(1rem, 3vw, 1.2rem)" }}>
+              In the past, I created a set of <a href="https://github.com/jianzhi-1/physics-notes/tree/master" target="_blank">lecture notes</a> for Physics Olympiad - hopefully, they'll be helpful to whoever decides to take on that journey.
+            </Typography>
+          </Stack>
+        </Grid>
+
+        {/* Image column */}
+        <Grid item xs={12} md={6}>
+          <Card>
+            <CardMedia
+              component="img"
+              image={fun}
+              alt="logo"
+              sx={{
+                width: "100%",
+                height: "auto",
+                borderRadius: 1, // optional rounding
+              }}
+            />
+          </Card>
+        </Grid>
+      </Grid>
+    </Box>
+  </Box>
 );
 
 const Coursework = () => {
