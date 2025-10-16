@@ -19,6 +19,7 @@ import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import YouTubeIcon from '@mui/icons-material/YouTube';
 import LogoDevIcon from '@mui/icons-material/LogoDev';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
@@ -152,6 +153,7 @@ const Home = () => {
 			</Stack>
 
 			<Stack spacing={2} direction="row">
+				<a href="https://youtube.com/@jianzhipieceofmind" target="_blank"><YouTubeIcon/></a>
 				<a href="https://github.com/jianzhi-1" target="_blank"><GitHubIcon/></a>
 				<a href="https://devpost.com/jianzhi-1" target="_blank"><LogoDevIcon/></a>
 			</Stack>
@@ -177,7 +179,7 @@ const About = () => (
               I am Jianzhi, and I (most recently) graduated from the University of California, Berkeley.
             </Typography>
             <Typography sx={{ fontSize: "clamp(1rem, 3vw, 1.2rem)" }}>
-              These days, I enjoy hiking, running, and simply wandering around.
+              These days, I enjoy hiking, running, and simply wandering around. This year, I'll also be spending some time to work on my YouTube channel <a href="https://youtube.com/@jianzhipieceofmind" target="_blank">Jianzhi's Piece of Mind</a>, where I casually talk about interesting things that I think about. 
             </Typography>
             <Typography sx={{ fontSize: "clamp(1rem, 3vw, 1.2rem)" }}>
               In the past, I created a set of <a href="https://github.com/jianzhi-1/physics-notes/tree/master" target="_blank">lecture notes</a> for Physics Olympiad - hopefully, they'll be helpful to whoever decides to take on that journey.
@@ -531,7 +533,7 @@ const Projects = () => (
 				<Grid container spacing={2}>
 					<Grid item xs={12} sm={6} md={4}>
 						<Project image={aimp} alt="ai-mp-image" title="AI Member of Parliament"
-						description="An event-driven agentic system that reimagines how Singapore's Meet-the-People sessions can work! - Submitted to TiDB AgentX Hackathon 2025" 
+						description="An event-driven agentic system that reimagines how Singapore's Meet-the-People sessions can work! 🏅 Won 5th place at TiDB AgentX Hackathon 2025" 
 						github="https://github.com/Mystic-Queen-Labs/AI-MP/"
 						demo="https://www.youtube.com/watch?v=yOWYG1xiyyA"
 						/>
@@ -539,7 +541,7 @@ const Projects = () => (
 
 					<Grid item xs={12} sm={6} md={4}>
 						<Project image={officeonfire} alt="office-on-fire-image" title="Office On Fire"
-						description="A strategy/escape-room game, playable solo or in multiplayer, where you survive a burning office tower with the help of clever items. - 🥈 Won 2nd place in the preliminary round of Tencent Cloud EdgeOne Hackathon" 
+						description="A strategy/escape-room game, playable solo or in multiplayer, where you survive a burning office tower with the help of clever items. 🥈 Won 2nd place in the preliminary round of Tencent Cloud EdgeOne Hackathon" 
 						github="https://github.com/Twisted-Balloon-Studios/office-on-fire"
 						demo="https://www.youtube.com/watch?v=m6WKtPzR9sY"
 						tryitout="https://office-on-fire.edgeone.app/"
