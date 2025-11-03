@@ -134,7 +134,7 @@ const Home = () => {
 			</h1>
 
 			<Stack direction={{ xs: "column", sm: "row" }} spacing={0.5} justifyContent="center" alignItems="center" sx={{ marginBottom: 2 }}>
-				<h6 style={{ fontSize: "clamp(0.8rem, 3vw, 1rem)", fontFamily: "Helvetica", fontWeight: "bold", margin: 0 }}>Berkeley, CA</h6>
+				<h6 style={{ fontSize: "clamp(0.8rem, 3vw, 1rem)", fontFamily: "Helvetica", fontWeight: "bold", margin: 0 }}>New York, NY</h6>
 				<h6 style={{ fontSize: "clamp(0.8rem, 3vw, 1rem)", fontFamily: "Helvetica", fontWeight: "bold", margin: 0 }}>&nbsp;·&nbsp;</h6>
 				<h6 style={{ fontSize: "clamp(0.8rem, 3vw, 1rem)", fontFamily: "Helvetica", fontWeight: "bold", margin: 0 }}>jianzhi@</h6>
 			</Stack>
